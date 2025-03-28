@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Winky Sans";
+    src: url("WinkySans.eot");
+    src: url("WinkySans.otf") format("otf"),
+    url("WinkySans.ttf") format("ttf"),
+    url("WinkySans.woff") format("woff"),    
+    url("WinkySans.woff2") format("woff2");
+    font-style: normal;
+}
