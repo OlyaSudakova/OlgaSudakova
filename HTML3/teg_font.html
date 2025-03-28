@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teg font</title>
+</head>
+<body>
+    <p><font size="5" color="#BruceWillis" face="Arial">П</font>ервая буква этого предложения 
+        написана шрифтом Arial, выделена <font size="5" color="b0e000" face="Arial">зеленым цветом</font> и увеличена в размерах.</p>
+    <p><font size="5" color="#CANDY" face="Arial">П</font>ервая буква этого предложения 
+        написана шрифтом Arial, выделена <font size="5" color="#ca0d00" face="Arial">красным цветом</font> и увеличена в размерах.</p>    
+    <hr>
+    <p>Пропускаемые цифры распознаются как 0[...]. Некорректные символы распознаются как 0. Так что, например, значения #F0F0F0, F0F0F0, F0F0F, #FxFxFx и FxFxFx – одно и то же.</p>
+    <ul>
+    <li>Заменяем все неправильные шестнадцатеричные символы нулями 0, BruceWillis превращается в b00ce000000, а CANDY в ca0d0</li>
+    <li>“Добиваем” число нулями до количества знаков, делимого на 3 (11 -> 12), получаем
+        b00c e000 0000 и ca 0d 00</li>
+    <li>Разбиваем на три группы, каждая из которых отвечает за одну компоненту RGB:
+        RGB (b00c e000 0000) и RGB(ca 0d 00)</li>
+    <li>Обрезаем каждый из аргументов справа, оставляя 2 символа, и получаем наш результат
+        #b0e000 и #ca0d00</li>
+    </ul>
+</body>
+</html>
