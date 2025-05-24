@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex_header{
+            background-image: url(img2/madeshkaf.png); 
+            height: 1024px; 
+            margin: -8px;
+            margin-top: -32px;
+        }
+        .center{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .header{
+            height: 64px;
+            width: 1200px;
+            margin-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 24px;
+            align-items: center;
+            padding-top: 26px;
+        }
+        .logo{
+            font-size: 32px;
+            color: #C0AD95;
+
+        }
+        .space_header{
+            margin-top: 20px;
+            margin-left: 32px;
+        }
+        li:first-of-type{
+            margin-top: 20px;
+        }
+        li:last-of-type{
+            margin-top: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .header2{
+            width: 620px;
+            height: 417px;
+            border: solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex_header">
+        <div class="header center">
+            <p class="logo">MADESHKAF</p>
+            <ul style="list-style-type: none; display: flex; justify-content: space-between; vertical-align: middle; color: white; text-align: center;">
+                <li><a href="">О нас</a></li>
+                <li class="space_header"><a href="">Каталог</a></li>
+                <li class="space_header"><a href="">Материалы</a></li>
+                <li class="space_header"><a href="">Рассчитать<br>стоимость</a></li>
+                <li class="space_header"><a href="">Отзывы</a></li>
+                <li class="space_header"><a href="">Контакты</a></li>
+                <li class="space_header"><a href="">+375291234567</a><br>Пн-Вс: 9:00-21:00</li>
+            </ul>
+        </div>
+        <div style="display: flex; justify-content: space-between; width: 1200px; align-items: center; height: 885px" class="center">
+            <div class="header2">
+                <h1 style="font-size: 70px; margin-top: -25px;">Шкафы на заказ</h1>
+                <h3 style="font-size: 33px;">По заявке с сайта скидка 10% каждому покупателю</h3>
+                <p style="font-size: 26px;">До конца скидки осталось:</p>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <form method="post" action="text">
+                    <label>Текст статьи:</label><br>
+                    <input type="text" name="text" style="width: 90%;">
+                </form><br>
+                <button type="submit">
+                    Опубликовать
+                </button>
+            </div>
+            <div>
+        
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

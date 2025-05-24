@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            height: 100px;
+            background-color: dodgerblue;
+        }
+        .menu{
+            background-color: rgb(125, 239, 199);
+            width: 200px;
+            order: 1;
+
+        }
+        .content{
+            background-color: rgb(153, 125, 239);
+            flex-grow: 1;
+            order: 2;
+            display: flex;
+            justify-content: center;
+        }
+        .banner{
+            background-color: rgb(216, 239, 125);
+            width: 200px;
+            height: 400px;
+            order: 3;
+        }
+        .footer{
+            height: 100px;
+            background-color: rgb(125, 182, 239);
+        }
+        .wrap{
+            display: flex;
+        }
+        .block{
+            background-color: yellowgreen;
+            height: 200px;
+            width: 300px;
+            margin-top: 20px;
+        }
+        @media all and (max-width: 700px){
+            .wrap{
+                flex-direction: column;
+            }
+            .menu{
+                width: 100%;
+                height: 300px;
+                order: 1;
+            }
+            .content{
+                flex-basis: 400px;
+                order: 3;
+            }
+            .banner{
+                height: 300px;
+                width: 100%;
+                order: 2;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="wrap">
+        <div class="menu"></div>
+        <div class="content">
+            <div class="block"></div>
+        </div>
+        <div class="banner"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

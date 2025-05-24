@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.star{
+            background: url(img/star0.png) no-repeat;
+            height: 80px;
+            width: 80px;
+            float: right;
+            
+        }
+        div.star:hover{
+            background: url(img/star1.png) no-repeat;
+        }
+        div.star:hover~div.star{
+            background: url(img/star1.png) no-repeat;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+</body>
+</html>

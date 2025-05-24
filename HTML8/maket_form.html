@@ -1,41 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .space {
+            margin-left: 95px;
+        }
+
+        fieldset {
+            border: double red 3px;
+        }
+
+        .float_l {
+            float: left;
+        }
+
+        .input_r {
+            float: left;
+            width: 50%;
+            margin-left: 65px;
+        }
+
+        .select_r {
+            float: left;
+            margin-left: 126px;
+        }
+
+        .publication_r {
+            float: left;
+            margin-left: 5px;
+        }
+        textarea{
+            width: 100%;
+        }
+
+        .clear {
+            display: none;
+            clear: both;
+        }
+
+        @media all and (max-width: 750px) {
+            .space {
+                margin-left: 0px;
+            }
+
+            .clear {
+                display: block;
+            }
+
+            .input_r {
+                float: none;
+                margin-left: 0;
+            }
+
+            .select_r {
+                float: none;
+                margin-left: 0;
+            }
+
+            .publication_r {
+                float: none;
+                margin-left: 0;
+            }
+            br:nth-child(-n+12){
+                display: none;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <div style="width: 100%;">
-        <fieldset style="border: double red 3px;">
-        <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
-        <form method="post" action="name">
-            <label>Название статьи:</label><br>
-            <input type="text" name="text" style="width: 50%">
-        </form><br>
-        Рубрика:<br>
-        <select name="type">
-            <option value="1" selected>программирование</option>
-            <option value="2">физика</option>
-            <option value="3">химия</option>
-            <option value="4">математика</option>
-            <option value="5">русский язык</option>
-            <option value="6">иностранный язык</option>
-            <option value="6">астрономия</option>
-        </select><br>
-        Публикация:<br>
-        <input type="radio" name="answer[]" value="1">На сайте<br>
-        <input type="radio" name="answer[]" value="2">В журнале<br>
-        <input type="radio" name="answer[]" value="3">На сайте и в журнале<br>
-        Разрешить комментарии:<input type="checkbox" name="comments" value="YES">
-        <form method="post" action="text">
-            <label>Текст статьи:</label><br>
-            <input type="text" name="text" style="width: 90%; height: 50px;">
-        </form><br>
-        <button type="submit">
-            Опубликовать
-        </button>
-    </fieldset>
+    <div style="width: 100%; font-size: large;">
+        <fieldset>
+            <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+            <form method="post" action="name">
+                <div class="float_l"><label>Название статьи:</label></div>
+                <div class="clear"></div>
+                <div class="input_r"><input type="text" name="text" style="width: 100%"></div>
+            </form><br>
+            <div class="float_l">Рубрика:</div>
+            <div class="clear"></div>
+            <div class="select_r"><select name="type">
+                    <option value="1" selected>программирование</option>
+                    <option value="2">физика</option>
+                    <option value="3">химия</option>
+                    <option value="4">математика</option>
+                    <option value="5">русский язык</option>
+                    <option value="6">иностранный язык</option>
+                    <option value="6">астрономия</option>
+                </select></div><br>
+            <div class="float_l">Публикация:</div>
+            <div class="clear"></div>
+            <div class="publication_r"><input type="radio" name="answer[]" value="1" class="space">На сайте
+                <input type="radio" name="answer[]" value="2">В журнале
+                <input type="radio" name="answer[]" value="3">На сайте и в журнале
+            </div><br>
+            Разрешить комментарии: <input type="checkbox" name="comments" value="YES"><br>
+                <label>Текст статьи:</label>
+            <textarea></textarea>
+            <button type="submit">
+                Опубликовать
+            </button>
+        </fieldset>
     </div>
 </body>
+
 </html>
