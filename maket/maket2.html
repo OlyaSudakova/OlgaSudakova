@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .flex_header{
-            background-image: url(img2/madeshkaf.png); 
-            height: 1024px; 
+        .flex_header {
+            background-image: url(img2/madeshkaf.png);
+            height: 1024px;
             margin: -8px;
             margin-top: -32px;
         }
-        .center{
+
+        .center {
             margin-left: auto;
             margin-right: auto;
         }
-        .header{
+
+        .header {
             height: 64px;
             width: 1200px;
             margin-top: 32px;
@@ -26,71 +28,741 @@
             align-items: center;
             padding-top: 26px;
         }
-        .logo{
+
+        .logo {
             font-size: 32px;
             color: #C0AD95;
 
         }
-        .space_header{
+
+        .space_header {
             margin-top: 20px;
             margin-left: 32px;
         }
-        li:first-of-type{
+
+        div.header li:first-of-type {
             margin-top: 20px;
         }
-        li:last-of-type{
+
+        div.header li:last-of-type {
             margin-top: 10px;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: white;
         }
-        .header2{
+
+        .header2 {
             width: 620px;
             height: 417px;
-            border: solid red;
+            color: white;
+        }
+
+        div.header2 h1 {
+            font-size: 70px;
+            margin-top: -25px;
+            margin-bottom: -20px;
+            font-weight: lighter;
+        }
+
+        div.header2 h3 {
+            font-size: 33px;
+            font-weight: lighter;
+        }
+
+        div.header2 p {
+            font-size: 26px;
+            font-weight: lighter;
+            margin-top: -20px;
+        }
+
+        div.header2 input {
+            height: 51px;
+            width: 510px;
+            border-radius: 8px;
+            font-size: 26px;
+            margin-top: 25px;
+        }
+
+        div.sales input {
+            height: 64px;
+            width: 758px;
+            border-radius: 8px;
+            font-size: 30px;
+            margin-top: 4px;
+        }
+        div.contacts input:first-of-type{
+            width: 412px;
+            height: 56px;
+            border-radius: 10px;
+            font-size: 26px;
+            margin-top: 23px;
+        }
+
+        div.header2 button {
+            height: 56px;
+            width: 260px;
+            border-radius: 8px;
+            background-color: #AF9678;
+            font-size: 26px;
+            color: #FFFFFF;
+        }
+        div.contacts button {
+            height: 56px;
+            width: 238px;
+            border-radius: 8px;
+            background-color: #AF9678;
+            font-size: 26px;
+            color: #FFFFFF;
+            box-shadow: 1px 3px 16px #FFDBB038;
+            margin-top: 20px;
+        }
+
+        div.sales button {
+            height: 56px;
+            width: 238px;
+            border-radius: 8px;
+            background-color: #AF9678;
+            font-size: 26px;
+            color: #FFFFFF;
+            box-shadow: 1px 3px 16px #FFDBB038;
+        }
+
+        div.stoimost button {
+            height: 56px;
+            width: 286px;
+            border-radius: 8px;
+            background-color: #AF9678;
+            font-size: 26px;
+            color: #FFFFFF;
+            box-shadow: 1px 3px 16px #FFDBB038;
+            margin-top: 7px;
+        }
+
+        .time_count {
+            width: 44px;
+            height: 40px;
+            background-color: white;
+            margin-top: -15px;
+            color: black;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 26px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .test {
+            width: 1168px;
+            height: 600px;
+            margin-top: 150px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        div.test button {
+            height: 56px;
+            width: 263.4083557128906px;
+            border-radius: 8px;
+            background-color: #AF9678;
+            font-size: 26px;
+            color: #FFFFFF;
+            margin-top: 10px;
+        }
+
+        .hedline {
+            font-size: 68px;
+            font-weight: lighter;
+            color: #937A60;
+        }
+
+        .text {
+            font-size: 30px;
+        }
+
+        .about {
+            width: 1176px;
+            height: 391px;
+            border-top: solid #AF9678 2px;
+            margin-top: 70px;
+        }
+
+        .why_choose {
+            width: 1181px;
+            height: 529px;
+            margin-top: 100px;
+        }
+
+        div.why_choose span {
+            font-size: 26px;
+            text-align: center;
+            width: fit-content;
+        }
+
+        .catalog {
+            width: 1232px;
+            height: 789px;
+            margin-top: 175px;
+        }
+
+        .cost {
+            font-size: 28px;
+            color: #E52B2B;
+            margin-top: 0;
+        }
+
+        .cost2 {
+            font-size: 28px;
+            color: #937A60;
+            margin-top: 0;
+        }
+
+        .special {
+            margin-top: 140px;
+            width: 1196px;
+            height: 1237px;
+        }
+
+        .materials {
+            margin-top: 200px;
+            width: 1196px;
+            height: 622px;
+        }
+
+        .sales {
+            margin-top: 150px;
+            width: 100%;
+            height: 572px;
+            background-color: #161513;
+            display: flex;
+            align-items: center;
+            background-image: url("img2/phone.png");
+            background-position: 917px;
+            background-repeat: no-repeat;
+        }
+
+        .reviews {
+            width: 1274px;
+            height: 407px;
+            margin-top: 200px;
+        }
+
+        .background {
+            width: 332px;
+            height: 608px;
+            background-color: #937A60B0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 29px;
+            color: white;
+            text-align: center;
+        }
+
+        div.background:first-child {
+            margin-left: 30px;
+            font-size: 33px;
+        }
+
+        div.background:last-child {
+            margin-right: 30px;
+            font-size: 35px;
+        }
+
+        .flex_center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .furnitura {
+            width: 337px;
+            height: 53px;
+            font-size: 40px;
+            align-items: start;
+        }
+
+        div.materials div.furnitura:hover {
+            border-bottom: solid 2px;
+        }
+
+        .proizvodstvo {
+            width: 100%;
+            height: 748px;
+            margin-top: 110px;
+            color: white;
+        }
+
+        .stoimost {
+            width: 100%;
+            height: 905px;
+            background-color: #161513;
+            display: flex;
+            margin-top: 150px;
+        }
+
+        .how {
+            width: 1135px;
+            height: 567px;
+            margin-top: 150px;
+        }
+
+        .contacts {
+            width: 1093px;
+            height: 800px;
+            margin-top: 150px;
+            margin-bottom: 100px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: 359px;
+            background-color: #937A60;
+        }
+
+        p.logo:last-child {
+            color: white;
+        }
+
+        .flex_between {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex_around {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        div.proizvodstvo span {
+            font-size: 37px;
+        }
+        div.special a{
+            font-size: 30px;
+            color: #937A60;
+            text-decoration: none;
+        }
+        .more{
+            width: 276px; 
+            text-align: center;
+        }
+        div.more:hover{
+            border-bottom: solid 1px #937A60;
+        }
+        .block_sale{
+            background-color: #11100E;
+            width: fit-content;
+            font-size: 19px;
+            color: white;
+            position: absolute;
+            padding: 15px;
+            top: -15px;
+            left: -20px;
+        }
+        textarea{
+            width: 412px;
+            height: 242px;
+            border-radius: 10px;
+            margin-top: 23px;
+            font-size: 26px;
         }
     </style>
 </head>
 
 <body>
+    <!-- header -->
     <div class="flex_header">
         <div class="header center">
             <p class="logo">MADESHKAF</p>
-            <ul style="list-style-type: none; display: flex; justify-content: space-between; vertical-align: middle; color: white; text-align: center;">
-                <li><a href="">О нас</a></li>
-                <li class="space_header"><a href="">Каталог</a></li>
-                <li class="space_header"><a href="">Материалы</a></li>
-                <li class="space_header"><a href="">Рассчитать<br>стоимость</a></li>
-                <li class="space_header"><a href="">Отзывы</a></li>
-                <li class="space_header"><a href="">Контакты</a></li>
-                <li class="space_header"><a href="">+375291234567</a><br>Пн-Вс: 9:00-21:00</li>
+            <ul class="flex_between"
+                style="list-style-type: none; vertical-align: middle; color: white; text-align: center;">
+                <li><a href="#about">О нас</a></li>
+                <li class="space_header"><a href="#catalog">Каталог</a></li>
+                <li class="space_header"><a href="#materials">Материалы</a></li>
+                <li class="space_header"><a href="#stoimost">Рассчитать<br>стоимость</a></li>
+                <li class="space_header"><a href="#reviews">Отзывы</a></li>
+                <li class="space_header"><a href="#contacts">Контакты</a></li>
+                <li class="space_header"><a href="tel:375291234567">+375291234567</a><br>Пн-Вс: 9:00-21:00</li>
             </ul>
         </div>
-        <div style="display: flex; justify-content: space-between; width: 1200px; align-items: center; height: 885px" class="center">
+        <div style=" width: 1200px; align-items: center; height: 885px" class="center flex_between">
             <div class="header2">
-                <h1 style="font-size: 70px; margin-top: -25px;">Шкафы на заказ</h1>
-                <h3 style="font-size: 33px;">По заявке с сайта скидка 10% каждому покупателю</h3>
-                <p style="font-size: 26px;">До конца скидки осталось:</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <h1>Шкафы на заказ</h1>
+                <h3>По заявке с сайта скидка 10% каждому покупателю</h3>
+                <p>До конца скидки осталось:</p>
+                <div class="flex_between" style=" width: 215px;">
+                    <div class="time_count">0</div>
+                    <div class="time_count">0</div>
+                    <div class="time_count">30</div>
+                    <div class="time_count">59</div>
+                </div>
+                <div class="flex_around" style="font-size: 21px; width: 215px;">
+                    <div class="time">Дни</div>
+                    <div class="time">Часы</div>
+                    <div class="time">Мин</div>
+                    <div class="time">Сек</div>
+                </div>
                 <form method="post" action="text">
-                    <label>Текст статьи:</label><br>
-                    <input type="text" name="text" style="width: 90%;">
+                    <input type="text" name="text" placeholder="Введите номер телефона">
                 </form><br>
                 <button type="submit">
-                    Опубликовать
+                    Получить скидку
                 </button>
             </div>
             <div>
-        
+
             </div>
         </div>
-        
     </div>
+    <!-- content -->
+    <div class="content">
 
+        <!-- uznayte stoimost -->
+        <div class="test center">
+            <div><img src="img2/img.png" alt=""></div>
+            <div style="width: 692px; height: 332px; margin-right: -40px; text-align: left;">
+                <p class="hedline" style="margin-top: -10px; margin-bottom: -10px; color: black;">Узнайте стоимость
+                    мебели</p>
+                <p class="text" style="text-shadow: 1px -1px 7px #BAD9005C;">Ответь на вопросы,получи скидку и
+                    бесплатный
+                    дизайн проект</p>
+                <button type="submit">
+                    Пройти тест
+                </button>
+            </div>
+        </div>
+
+        <!-- about us -->
+        <div class="about center">
+            <article id="about"></article>
+            <p class="hedline" style="margin-top: 20px; margin-bottom: 0px; text-align: center;">О нас
+            </p>
+            <p class="text">Мы рады видеть вас на нашем сайте, здесь представлены примеры наших работ и мебель, которую
+                мы можем изготовить, в том числе по вашим индивидуальным запросам.
+                Мы поможем сделать вашу квартиру, дом или офис более комфортным, функциональным и привлекательным. В
+                производстве мебели мы используем лучшие материалы и современное оборудование, чтобы создавать
+                по-настоящему красивую, удобную и качественную мебель.</p>
+        </div>
+
+        <!-- pochemu vibiraut nas -->
+        <div class="why_choose center">
+            <p style="font-size: 60px; color: #937A60; margin-top: -20px;">Почему более 14 лет клиенты выбирают нас:</p>
+            <div class="flex_between" style="width: auto;">
+                <img src="img2/nh 2.png" alt="" width="150px" height="141.1392364501953px">
+                <img src="img2/save-money 1.png" alt="" width="150px" height="150px">
+                <img src="img2/fast 1.png" alt="" width="150px" height="150px">
+                <img src="img2/promotions (1) 1.png" alt="" width="150px" height="150px">
+                <img src="img2/medal 1.png" alt="" width="150px" height="150px">
+                <img src="img2/3d-bar-chart 1.png" alt="" width="150px" height="150px">
+            </div>
+            <div class="center" style="width: 1236px; display: flex; font-size: 26px; text-align: center;">
+                <div style="width: 133px;height: 29px; margin-left: 20px;">Рассрочки</div>
+                <div style="width: 138px;height: 58px;margin-left: 57px;">Заводские
+                    цены</div>
+                <div style="width: 170px;height: 58px;margin-left: 48px;">Оперативные
+                    сроки</div>
+                <div style="width: 225px;height: 48px;margin-left: 16px;">Акции, скидки,
+                    бонусы</div>
+                <div style="width: 167px;height: 58px;margin-left: 12px;">Европейское
+                    качество</div>
+                <div style="width: 189px; height: 58px;margin-left: 26px;">Бесплатная 3d
+                    визуализация</div>
+            </div>
+            <div class="flex_center text"
+                style="width: 936px; height: 122px; border-top: solid 2px #AF9678; border-right: solid 2px #AF9678; margin-top: 86px; margin-left: 80px;">
+                Возможность рассрочки от нашей компании с 0% переплат!</div>
+
+        </div>
+
+        <!-- catalog -->
+        <div class="catalog center">
+            <article id="catalog"></article>
+            <p class="hedline" style="margin-top: -25px; margin-left: 30px;">Каталог</p>
+            <div class="flex_between" style="height: 664px; width: 1232px; align-items: center; position: relative;">
+                <img src="img2/Group 42.png">
+                <img src="img2/Group 41.png">
+                <img src="img2/Group 43.png">
+                <div class="flex_between"
+                    style="height: 664px; width: 1232px; align-items: center; position: absolute;">
+                    <div class="background">Шкаф-купе</div>
+                    <div class="background">Шкаф с распашными дверями</div>
+                    <div class="background">Кухни</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- sovremennie materiali -->
+        <div class="materials center">
+            <article id="materials"></article>
+            <p class="hedline" style="margin-top: -25px; margin-left: 30px;">Современные материалы</p>
+            <div class="center flex_between" style="width: 945px; height: 53px;">
+                <div class="flex_center furnitura">Материалы</div>
+                <div class="flex_center furnitura">Фурнитура</div>
+            </div>
+            <div class="flex_around text" style="margin-top: 65px;;">
+                <div><img src="img2/image.png">
+                    <div class="flex_center">Лдсп</div>
+                </div>
+                <div><img src="img2/image-2.png">
+                    <div class="flex_center">Стекло</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- special predlozhenie -->
+        <div class="special center">
+            <p class="hedline" style="margin-top: -25px; margin-left: 30px;">Специальные предложения
+            </p>
+            <div style="display: flex; flex-direction: column;">
+                <div class="flex_between" style="width: 1196px;">
+                    <div style="display: flex; flex-direction: column; position: relative;">
+                        <div class="block_sale">Хит продаж</div>
+                        <img src="img2/Rectangle 26.png" style="width: 340px; height: 432px;">
+                        <div class="flex_between" style="align-items: center;">
+                            <p class="text">Шкаф Riviera/1</p>
+                            <p class="cost2" style="margin-top: auto;">1000p</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; position: relative;">
+                        <div class="block_sale">-50%</div>
+                        <img src="img2/Rectangle 27.png" style="width: 340px; height: 432px;">
+                        <div class="flex_between" style="align-items: center;">
+                            <p class="text">Шкаф Comfort/5</p>
+                            <div><span style="font-size: 13px; color: #937A60;text-align: right;">1800p</span><p class="cost">900p</p></div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; position: relative;">
+                        <div class="block_sale">-30%</div>
+                        <img src="img2/Rectangle 28.png" style="width: 340px; height: 432px;">
+                        <div class="flex_between" style="align-items: center;">
+                            <p class="text">шкаф WingLine</p>
+                            <div><span style="font-size: 13px; color: #937A60;text-align: right;">1200p</span><p class="cost">840p</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex_between" style="width: 1196px; margin-top: 35px;">
+                    <div style="display: flex; flex-direction: column; position: relative;">
+                        <div class="block_sale">Рассрочка</div>
+                        <img src="img2/Rectangle 32.png" style="width: 340px; height: 432px;">
+                        <div class="flex_between" style="align-items: center;">
+                            <p class="text">Шкаф Riviera/5</p>
+                            <div><span style="font-size: 13px; color: #E52B2B;text-align: right;">24 мес</span><p class="cost2" style="font-size: 25px;">180p/мес</p></div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; position: relative;">
+                        <div class="block_sale">-40%</div>
+                        <img src="img2/Rectangle 33.png" style="width: 340px; height: 432px;">
+                        <div class="flex_between" style="align-items: center;">
+                            <p class="text">Шкаф Comfort/3</p>
+                            <div><span style="font-size: 13px; color: #937A60;text-align: right;">700p</span><p class="cost">420p</p></div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; position: relative;">
+                        <div class="block_sale">-15%</div>
+                        <img src="img2/Rectangle 34.png" style="width: 340px; height: 432px;">
+                        <div class="flex_between" style="align-items: center;">
+                            <p class="text">шкаф WingLine/8</p>
+                            <div><span style="font-size: 13px; color: #937A60;text-align: right;">600p</span><p class="cost">510p</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center more">
+                    <a href="">Смотреть ещё</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- akcii -->
+        <div class="sales center">
+            <div class="center flex_center" style="flex-direction: column; width: 758px; height: 304px; color: white;">
+                <p class="hedline" style="margin-top: -30px; color: white;">Акции</p>
+                <p class="text" style="margin-top: -62px;">Узнай первым об акциях и скидках</p>
+                <form method="post" action="text" class="center">
+                    <input type="text" name="text" placeholder="введите номер телефона или email">
+                </form><br>
+                <button type="submit" class="center">
+                    Подписаться
+                </button>
+            </div>
+        </div>
+
+        <!-- otzivi -->
+        <div class="reviews center">
+            <article id="reviews"></article>
+            <p class="hedline" style="margin-top: -24px; margin-left: 27px;">Отзывы</p>
+            <div class="center" style="display: flex; width: 1082px; flex-direction: column; margin-top: -60px;">
+                <div style="font-size: 37px;">
+                    <p>@prlxlr13</p>
+                </div>
+                <div class="text">
+                    <p>Хочу выразить свою благодарность всему коллективу компании, консультанту, замерщику и
+                        монтажникам.
+                        Ребята, которые устанавливали кухню, порадовали своей работой, все чисто, аккуратно и быстро.
+                        Нареканий по кухне нет, новая кухня – всегда радость для хозяйки!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- proizvodstvo -->
+        <div class="proizvodstvo center">
+            <p class="hedline" style="margin-top: -24px; margin-left: 95px; margin-bottom: 91px;">Производство</p>
+            <div class="flex_between" style="width: 100%; height: 604px; margin-top: 10px; position: relative;">
+                <img src="img2/image 34.png" alt="" style="margin-right: 20px; margin-left: -8px;">
+                <img src="img2/image 33.png" alt="">
+                <div class="flex_center center" style="width: 100%; height: 604px; position: absolute;">
+                    <div class="flex_center" style="width: 948px;height: 340px; -webkit-backdrop-filter: blur(15px);">
+                        <ul style="list-style-type: none;">
+                            <span
+                                style="font-size: 37px; color: #937A60; position: absolute;left: 103px;top: 56px;">0</span>
+                            <li class="text" style=" position: relative;"><span>1</span>Минимальный опыт работы наших
+                                монтажников — 10 лет</li>
+                            <span
+                                style="font-size: 37px; color: #937A60; position: absolute;left: 152px;top: 114px;">0</span>
+                            <li class="text" style="padding-left: 50px; padding-top: 15px; position: relative;">
+                                <span>2</span>Любые размеры, цвет, дизайн и фурнитура
+                            </li>
+                            <span
+                                style="font-size: 37px; color: #937A60; position: absolute;left: 202px;top: 172px;">0</span>
+                            <li class="text" style="padding-left: 100px;padding-top: 15px; position: relative;">
+                                <span>3</span>Установка в удобные для Вас день и время
+                            </li>
+                            <span
+                                style="font-size: 37px; color: #937A60; position: absolute;left: 253px; top: 232px;">0</span>
+                            <li class="text" style="padding-left: 150px;padding-top: 15px; position: relative;">
+                                <span>4</span>Сроки изготовления 5-15 дней
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- how rabotaem -->
+        <div class="how center">
+            <p class="hedline" style="margin-top: -20px;">Как мы работаем</p>
+            <div class="flex_between" style="width: 1094px;height: 442px; position: relative;">
+                <div style="display: flex; flex-direction: column;">
+                    <img src="img2/graphic-designer.png" alt="">
+                    <img src="img2/contract.png" alt="" style="margin-top: 80px;">
+                    <img src="img2/factory.png" alt="" style="margin-top: 63px;">
+                </div>
+                <div style="display: flex; flex-direction: column;margin-left: -55px;margin-right: 40px;">
+                    <p class="text">Заказать выезд дизайнера</p>
+                    <p class="text" style="margin-top: 120px;margin-bottom: 62px;">Оформление договора</p>
+                    <p class="text" style="margin-top: 63px;">Производство</p>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <img src="img2/design.png" alt="">
+                    <img src="img2/businessman-in-apresentation-with-a-graphic-on-a-board.png" alt=""
+                        style="margin-top: 80px;">
+                    <img src="img2/maintenance.png" alt="" style="margin-top: 63px;">
+                </div>
+                <div style="display: flex; flex-direction: column; margin-left: -70px;">
+                    <p class="text">Обмер</p>
+                    <p class="text" style="margin-top: 120px;margin-bottom: 62px;">Построение проекта</p>
+                    <p class="text" style="margin-top: 63px;"> Установка</p>
+                </div>
+                <img src="img2/Arrow 3.png" style="position: absolute;left: 529px;top: 224px;">
+                <img src="img2/Arrow 1.png" style="position: absolute;left: 548px; top: 39px;">
+                <img src="img2/Arrow 5.png" style="position: absolute;left: 456px; top: 384px;">
+                <img src="img2/Arrow 2.png" style="position: absolute;left: 913px; top: 100px;">
+                <img src="img2/Arrow 2.png" style="position: absolute;left: 170px; top: 277px;">
+            </div>
+        </div>
+
+        <!-- stoimost -->
+        <div class="stoimost">
+            <article id="stoimost"></article>
+            <img src="img2/cost.png" style="width: 578px; height: 905px;">
+            <div class="center flex_center" style="background-color: #161513;">
+                <div style="width: 705px;height: 332px;">
+                    <p class="hedline" style="margin-top: -12px; color: white;">Узнайте стоимость мебели</p>
+                    <p class="text" style="color: white; margin-top: -45px;">Ответь на вопросы,получи скидку и
+                        бесплатный дизайн проект</p>
+                    <button type="submit" class="center">
+                        Пройти тест
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- kontakti -->
+        <div class="contacts center">
+            <article id="contacts"></article>
+            <p class="hedline" style="margin-top: -15px; margin-bottom: 13px;">Контакты</p>
+            <div class="flex_between" style="width: 1010px;height: 720px; margin-left: 79px;">
+                <div style="height: 500px; margin-top: 177px" class="text">
+                    <div>
+                        <p>Адрес офиса:<br>
+                            г.Минск ул П Бровки 45</p>
+                    </div>
+                    <div>
+                        <p>Номер телефона:<br>+375-25-919-92-90</p>
+                    </div>
+                    <div>
+                        <p>Email:<br>info@gmail.com</p>
+                    </div>
+                    <div>
+                        <p>Режим работы:<br>пн-вс 9:00-21:00</p>
+                    </div>
+                    <div style="width: 156px;height: 40px; align-items: center;" class="flex_between">
+                        <div><a href=""><img src="img2/la_viber.png"></a></div>
+                        <div style="margin-right: 6px;"><a href=""><img src="img2/Vector.png"></a></div>
+                        <div><a href=""><img src="img2/Vector-2.png"></a></div>
+                    </div>
+                </div>
+                <div style="background-image: url(img2/i38.png); width: 540px;height: 720px" class="flex_center">
+                    <div style="width: 415px;height: 588px; flex-direction: column; display: flex; text-align: center; -webkit-backdrop-filter: blur(5px);" class="center">
+                        <p class="text" style="color: white; margin-bottom: 0px;">Заказать консультацию</p>
+                        <form method="post" action="text" class="center">
+                            <input type="text" name="text" placeholder="Номер телефона">
+                        </form>
+                        <form method="post" action="text" class="center">
+                            <input type="text" name="text" placeholder="Email">
+                        </form>
+                        <textarea name="comment" placeholder="Комментарии"></textarea>
+                        <button type="submit" class="center">
+                            Заказать
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="flex_center" style="width: 202px; height: 52px; margin-right: 80px;">
+                <p class="logo">MADESHKAF</p>
+            </div>
+            <div class="flex_center" style="width: 259px;height: 248px;">
+                <ul class="text" style="list-style-type: none; display: flex; flex-direction: column;">
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">Материалы</a></li>
+                    <li><a href="">Цены</a></li>
+                    <li><a href="">Отзывы</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+            <div style="background-image: url(img2/image39.png); width: 595px; height: 252px; position: relative;"><img
+                    src="img2/image 40.png" style="position: absolute; left: 232px; top: 122px;"></div>
+        </div>
 </body>
 
 </html>
