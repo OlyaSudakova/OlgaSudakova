@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Сделайте ресайз экрана, чтобы увидеть как меняется изображение в связи с изменением расширения окна браузера
+    </h3>
+    <picture>
+        <source srcset="img/biohazard.png" media="(max-width: 600px)">
+        <source srcset="img/No_smoking.png" media="(max-width: 800px)">
+        <img src="img/IMG_2076.JPG" alt="Абстрактное изображение" style="width: 500px;">
+    </picture>
+    <h3>Если ваш не браузер поддерживает формат avif или webp, то изображение будет в формате png
+    </h3>
+    <picture>
+        <source srcset="img/images.avif" type="image/avif" style="width: 700px;">
+        <source srcset="img/format-wepb-anons.webp" type="image/webp" style="width: 700px;">
+        <img src="img/No_smoking.png" alt="test image" style="width: 700px;">
+      </picture>
+</body>
+
+</html>

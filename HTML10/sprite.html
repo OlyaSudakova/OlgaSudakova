@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sprite_cont{
+            height: 200px;
+            display: flex;
+            align-items: center;
+        }
+        .sprite_img{
+            height: 105px;
+            width: 80px;
+            background: url(IMG_3974.jpg) 0px 0px;
+            animation: play 0.8s steps(4) infinite, step 6s linear infinite;
+            position: absolute;
+            left: 0;
+        }
+        .sprite_img2{
+            background: url(IMG_39742.jpg) 0px 0px;
+            height: 150px;
+            width: 80px;
+            animation: play2 0.8s steps(7) infinite, step 6s linear infinite;
+            position: absolute;
+            left: 0;
+        }
+        @keyframes play2{
+            100%{
+                background-position: -600px;
+            }
+        }
+        @keyframes play{
+            100%{
+                background-position: -690px;
+            }
+        }
+        @keyframes step{
+            100%{
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sprite_cont">
+        <div class="sprite_img"></div>
+    </div>
+    <div class="sprite_cont">
+        <div class="sprite_img2"></div>
+    </div>
+</body>
+</html>

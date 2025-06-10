@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        svg{
+            width: 200px;
+            height: 200px;
+        }
+        circle:first-of-type{
+            cx: 100px;
+            cy: 100px;
+            r: 50px;
+            stroke: violet;
+            fill:darkorchid;
+            stroke-width: 3px;
+            animation-name: circle_anim;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        circle:last-of-type{
+            cx: 25px;
+            cy: 25px;
+            r: 20px;
+            fill: lightcoral;
+        }
+        rect{
+            x: 0px;
+            y: 0px;
+            width: 200px;
+            height: 200px;
+            stroke:darkmagenta;
+            stroke-width: 3px;
+            fill:aquamarine;
+        }
+        div{
+            width: 400px;
+            height: 400px;
+            border: solid
+        }
+        div:hover rect{
+            animation: 
+            rect_anim 3s infinite alternate;
+        }
+        div:hover circle:last-of-type{
+            animation: circle_anim2 3s infinite alternate;
+        }
+        @keyframes circle_anim2{
+            from{
+                cx: 25px;
+                cy: 25px;
+                
+            }
+            to{
+                cx:100px;
+                cy: 100px;
+            }
+        }
+        @keyframes circle_anim{
+            from{
+                fill:hotpink;
+            }
+            50%{
+                fill:deeppink;
+            }
+            to{
+                fill:darkorchid
+            }
+        }
+        @keyframes rect_anim{
+            from{
+                width: 200px;
+                height: 200px;
+                x: 0px;
+                y: 0px;
+            }
+            to{
+                width: 100px;
+                height: 100px;
+                x: 50px;
+                y: 50px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <rect/>
+        <circle/>
+        <circle/>
+    </svg>
+    <span style="position: absolute; top: 300px;"><b>наведи курсор сюда</b></span>
+    </div>
+</body>
+</html>

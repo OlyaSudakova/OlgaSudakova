@@ -377,6 +377,30 @@
             margin-top: 23px;
             font-size: 26px;
         }
+        @media all and (max-width: 750px){
+            div.test img{
+                display: none;
+            }
+            .test{
+                width: 330px;
+            height: 276px;
+            margin-top: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            .about{
+                width: 328px;
+            height: 439px;
+            border-top: solid #AF9678 2px;
+            margin-top: 70px;
+            }
+            .reviews {
+            width: 328px;
+            height: 425px;
+            margin-top: 200px;
+        }
+    }
     </style>
 </head>
 
@@ -727,8 +751,8 @@
                         <div><a href=""><img src="img2/Vector-2.png"></a></div>
                     </div>
                 </div>
-                <div style="background-image: url(img2/i38.png); width: 540px;height: 720px" class="flex_center">
-                    <div style="width: 415px;height: 588px; flex-direction: column; display: flex; text-align: center; -webkit-backdrop-filter: blur(5px);" class="center">
+                <div style="background-image: url(img2/i38.png); width: 540px;height: 720px; " class="flex_center">
+                    <div style="width: 540px;height: 720px; flex-direction: column; display: flex; justify-content: center; text-align: center; -webkit-backdrop-filter: blur(5px); border-radius: 8px;" class="center">
                         <p class="text" style="color: white; margin-bottom: 0px;">Заказать консультацию</p>
                         <form method="post" action="text" class="center">
                             <input type="text" name="text" placeholder="Номер телефона">
@@ -736,7 +760,7 @@
                         <form method="post" action="text" class="center">
                             <input type="text" name="text" placeholder="Email">
                         </form>
-                        <textarea name="comment" placeholder="Комментарии"></textarea>
+                        <textarea name="comment" placeholder="Комментарии" class="center"></textarea>
                         <button type="submit" class="center">
                             Заказать
                         </button>

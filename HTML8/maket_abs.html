@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .second{
+            width: 600px;
+            height: 600px;
+            position: relative;
+        }
+        .main {
+            position: absolute;
+            top: 107px;
+            left: 140px;
+        } 
+        .pic_main{
+            width: 350px;
+            height: auto;
+        }
+        .pic_second{
+            width: 300px;
+            height: auto;
+            position: absolute;
+        }
+        img:nth-child(1){
+            top: 10px;
+            left: 308px;
+        }
+        img:nth-child(2){
+            top: 56px;
+            left: -10px;
+        }
+        img:nth-child(3){
+            top: 306px;
+            left: 167px;
+        }
+        img:nth-child(1):hover{
+            z-index: 3;   
+        }
+        img:nth-child(2):hover{
+            z-index: 3;    
+        }
+        img:nth-child(3):hover{
+            z-index: 3;    
+        }
+    </style>
+</head>
+
+<body>
+    <div>Я к вам пишу — чего же боле?
+        Что я могу еще сказать?
+        Теперь, я знаю, в вашей воле
+        Меня презреньем наказать.
+        Но вы, к моей несчастной доле
+        Хоть каплю жалости храня,
+        Вы не оставите меня.
+        Сначала я молчать хотела;
+        Поверьте: моего стыда
+        Вы не узнали б никогда,
+        Когда б надежду я имела
+        Хоть редко, хоть в неделю раз
+        В деревне нашей видеть вас.</div>
+        <div class="second center">
+            <img src="img/Man-and-woman.png" class="pic_second">
+            <img src="img/biohazard.png" class="pic_second">
+            <img src="img/Yin_and_Yang.png" class="pic_second">
+            <div class="main center">
+                <img src="img/No_smoking.png" class="pic_main">
+            </div>
+        </div>
+        
+    <div>Чтоб только слышать ваши речи,
+        Вам слово молвить, и потом
+        Все думать, думать об одном
+        И день и ночь до новой встречи.</div>
+</body>
+
+</html>
