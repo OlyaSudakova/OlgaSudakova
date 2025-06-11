@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {
+            height: 45px;
+            width: 100%;
+            background-color: aquamarine;
+            color: blue;
+            text-align: center;
+        }
+        .flexbox {
+            display: flex;
+        }
+
+        .menu {
+            padding: 15px;
+            width: auto;
+            background-color: bisque;
+        }
+        img{
+            float: left; 
+            padding: 15px; 
+            padding-top: 0px;
+        }
+        .middle {
+            border: solid white;
+            background-color: white;
+            text-align: left;
+            width: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-image: url(a_ball.gif); 
+            background-repeat: repeat-y; 
+            background-position: right;
+        }
+        ul{
+            padding-left: 15px;
+        }
+
+
+        @media all and (max-width: 600px){
+            .flexbox{
+                flex-direction: column;
+            }
+            div img{
+                float: none;
+                order: 1;
+            }
+            img{
+                width: 100%;
+                padding: 0;
+            }
+            .menu{
+                width: 100%;
+                order: 3;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+            }
+            .middle{
+                width: 100%;
+                order: 2;
+                background-image: none;
+                padding: 0;
+                padding-top: 10px;
+            }
+            .top{
+                display: none;
+            }
+            div .first, .second, .third, .forth, .fifth{
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: row;
+            }
+            ul{
+                width: 100%;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                padding-left: 0;
+            }
+            li{
+                padding-right: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <h2 style="padding-top: 9px;">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</h2>
+    </div>
+    <div class="flexbox">
+        <div class="menu">
+            <h3>Виды спорта:</h3>
+            <ul>
+                <div class="first"><li><a target="_blank" href="https://ru.wikipedia.org/wiki/Конькобежный_спорт">Конькобежный спорт</a>
+                </li>
+                <li><a target="_blank" href="https://ru.wikipedia.org/wiki/Биатлон">Биатлон</a></li>
+            </div>
+                <div class="second"><li><a target="_blank" href="https://ru.wikipedia.org/wiki/Футбол">Футбол</a></li>
+                <li><a target="_blank" href="https://ru.wikipedia.org/wiki/Стрельба_из_лука_(вид_спорта)">Стрельба из
+                        лука</a></li></div>
+                <div class="third"><li><a target="_blank" href="https://ru.wikipedia.org/wiki/Прыжки_на_батуте">Прыжки в длину</a></li>
+                <li><a target="_blank" href="https://ru.wikipedia.org/wiki/Прыжки_на_батуте">Прыжки в высоту</a></li></div>
+                <div class="forth"><li><a target="_blank" href="https://ru.wikipedia.org/wiki/Фигурное_катание">Фигурное катание</a></li>
+                <li><a target="_blank" href="https://ru.wikipedia.org/wiki/Синхронное_плавание">Синхронное плавание</a>
+                </li></div>
+                <div class="fifth"><li><a target="_blank" href="https://ru.wikipedia.org/wiki/Шашки">Шашки</a></li>
+                <li><a target="_blank" href="https://ru.wikipedia.org/wiki/Шахматы">Шахматы</a></li></div>
+            </ul>
+        </div>
+        <div class="middle">
+            <h2 style="text-align: center;">ФУТБОЛ</h2><div><img src="ft.jpeg"></div>Футбол — командный вид спорта, в котором целью
+            является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) большее количество раз,
+            чем
+            команда соперника.<br><br>Есть 17 официальных правил игры, каждое из которых содержит список оговорок и
+            руководящих принципов. Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые
+            изменения для таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями.
+            Законы очень часто формулировались в общих чертах, которые позволяют упростить их применения в зависимости
+            от
+            характера игры.
+        </div>
+    </div>
+    <div class="top" style="margin-top: -20px;">
+        <h2 style="padding-top: 9px;">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</h2>
+    </div>
+</body>
+
+</html>
