@@ -13,9 +13,8 @@
         var age = prompt('Введите ваш в годах', '20');
         var sex = confirm('Вы мужчина?');
         var sexChecked = (sex)?"мужской":"женский";
-        var pension = confirm('Вы на пенсии?');
-        var pensionChecked = (pension)?"да":"нет";
-        alert("Ваше ФИО: "+surname+" "+name+" "+secondName+"\nВаш возраст в годах: "+parseInt(age) +"\nВаш возраст в днях: "+ parseInt(age)*365+"\nЧерез 5 лет вам будет: "+(parseInt(age)+5)+"\nВаш пол: "+sexChecked+"\nВы на пенсии: "+pensionChecked);
+        var pension = sex ? ( age >= 65 ? "да" : "нет" ) : (age >= 60 ? "да" : "нет");
+        alert("Ваше ФИО: "+surname+" "+name+" "+secondName+"\nВаш возраст в годах: "+parseInt(age) +"\nВаш возраст в днях: "+ parseInt(age)*365+"\nЧерез 5 лет вам будет: "+(parseInt(age)+5)+"\nВаш пол: "+sexChecked+"\nВы на пенсии: "+pension);
     </script>
 </body>
 </html>

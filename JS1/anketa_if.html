@@ -18,12 +18,13 @@
         else{
             sex="женский"
         }
-        var pension = confirm('Вы на пенсии?');
-        if(pension == true){
-            pension="да"
-        }
-        else{
-            pension="нет"
+        var pension;
+        if (age >= 65 && sex === true) {
+            pension = "да";
+        } else if (age >= 60 && sex === false) {
+            pension = "да";
+        } else {
+            pension = "нет";
         }
         alert("Ваше ФИО: "+surname+" "+name+" "+secondName+"\nВаш возраст в годах: "+parseInt(age) +"\nВаш возраст в днях: "+ parseInt(age)*365+"\nЧерез 5 лет вам будет: "+(parseInt(age)+5)+"\nВаш пол: "+sex+"\nВы на пенсии: "+pension);
     </script>
