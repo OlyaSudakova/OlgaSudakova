@@ -41,24 +41,3 @@ document.head.appendChild(cssLink);
 
         // Инициализация слайдера
         updateSlider();
-
-        let blockCount = 0;
-        const countElement = document.getElementById('count');
-        function addBlock() {
-            blockCount++;
-            newBlock.textContent = blockCount;
-            blocksContainer.appendChild(newBlock);
-            updateCounter();
-          }
-        
-          function removeBlock() {
-            if (blockCount > 0) {
-              blockCount--;
-              updateCounter();
-            }
-          }
-        
-          function updateCounter() {
-            countElement.textContent = blockCount;
-          }
-          updateCounter();
