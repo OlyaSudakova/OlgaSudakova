@@ -1,11 +1,386 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Houses</title>
 </head>
+
 <body>
+    <div class="flex">
+        <div class="head_bg flex_center center">
+            <div class="head center">
+                <!-- header -->
+                <div style="height: 48px;width: 325px; align-items: center;" class="flex_between">
+                    <div class="logo">
+                        <a href="maket_final.html"><img src="img3/logo.png" alt="logotip"></a>
+                    </div>
+                    <div class="flex_center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" fill="none">
+                            <path
+                                d="M6 0C2.68286 0 0 2.504 0 5.6C0 9.8 6 16 6 16C6 16 12 9.8 12 5.6C12 2.504 9.31714 0 6 0ZM6 7.6C5.43168 7.6 4.88663 7.38929 4.48477 7.01421C4.08291 6.63914 3.85714 6.13043 3.85714 5.6C3.85714 5.06957 4.08291 4.56086 4.48477 4.18579C4.88663 3.81071 5.43168 3.6 6 3.6C6.56832 3.6 7.11337 3.81071 7.51523 4.18579C7.91709 4.56086 8.14286 5.06957 8.14286 5.6C8.14286 6.13043 7.91709 6.63914 7.51523 7.01421C7.11337 7.38929 6.56832 7.6 6 7.6Z"
+                                fill="black" />
+                        </svg>
+                        <div class="dropdown"><a href="" style="margin-left: 10px;">Москва</a>
+                            <div class="dropdown-content">
+                                <a href="#">Санкт-Петербург</a>
+                                <a href="#">Ижевск</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_between" style="width: 746px; height: 73px;">
+                    <div>
+                        <ul class="flex_between">
+                            <li><a href="" target="_blank">О компании</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8"
+                                    fill="none">
+                                    <path d="M14 0.5L7.5 6.5L1 0.5" stroke="#2E2E2E" />
+                                </svg>
+                            </li>
+                            <li class="space_header">
+                                <div class="dropdown"><a href="">Дома</a>
+                                    <div class="dropdown-content">
+                                        <a href="ready_type.html" target="_blank">Готовые дома на продажу</a>
+                                        <a href="typical_type.html" target="_blank">Типовые проекты домов</a>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8"
+                                        fill="none">
+                                        <path d="M14 0.5L7.5 6.5L1 0.5" stroke="#2E2E2E" />
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="space_header"><a href="#materials">Ипотека</a></li>
+                            <li class="space_header"><a href="#stoimost">Отзывы</a></li>
+                            <li class="space_header"><a href="#reviews">Инвесторам</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex">
+                        <div style="width: 188px; height: 73px; align-items: start; margin-bottom: 4px; margin-top: 13px;"
+                            class="flex_center">
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                    viewBox="0 0 19 19" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.49725 0C4.26006 0 0 4.26125 0 9.49992C0 11.5775 0.670004 13.5043 1.80896 15.0682L0.625254 18.5978L4.27676 17.4307C5.77861 18.4249 7.57088 19 9.50275 19C14.7399 19 19 14.7386 19 9.50008C19 4.26142 14.7399 0.000157038 9.50275 0.000157038L9.49725 0ZM6.84509 4.82554C6.66088 4.38436 6.52127 4.36765 6.2422 4.35631C6.14718 4.35079 6.04129 4.34528 5.9239 4.34528C5.56084 4.34528 5.18125 4.45135 4.95229 4.68589C4.67322 4.97071 3.98083 5.63523 3.98083 6.99802C3.98083 8.3608 4.97466 9.67881 5.1086 9.86323C5.24822 10.0473 7.04614 12.8845 9.83775 14.0408C12.0208 14.9455 12.6686 14.8617 13.1654 14.7556C13.8912 14.5992 14.8014 14.0629 15.0304 13.4152C15.2593 12.7672 15.2593 12.2143 15.1922 12.097C15.1252 11.9798 14.9408 11.9129 14.6618 11.7731C14.3827 11.6335 13.0258 10.9633 12.769 10.8739C12.5177 10.779 12.2777 10.8126 12.0879 11.0807C11.8199 11.4549 11.5576 11.8348 11.3453 12.0636C11.1778 12.2424 10.9041 12.2647 10.6753 12.1697C10.3682 12.0414 9.50844 11.7395 8.44748 10.7957C7.62667 10.0642 7.06838 9.15394 6.90655 8.88031C6.74456 8.60117 6.88983 8.43898 7.01809 8.28829C7.15771 8.11507 7.29166 7.99228 7.43127 7.83025C7.57089 7.66837 7.64905 7.58452 7.73839 7.39459C7.83341 7.21033 7.76627 7.0204 7.6993 6.88074C7.63233 6.74109 7.07404 5.37831 6.84509 4.82554Z"
+                                        fill="#67C15E" />
+                                </svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                    viewBox="0 0 19 19" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19 9.5C19 14.7467 14.7467 19 9.5 19C4.25329 19 0 14.7467 0 9.5C0 4.25329 4.25329 0 9.5 0C14.7467 0 19 4.25329 19 9.5ZM9.84039 7.01332C8.91642 7.39765 7.06968 8.19308 4.30024 9.39968C3.85052 9.57856 3.61494 9.75356 3.5935 9.92455C3.55726 10.2137 3.91931 10.3275 4.41232 10.4826C4.47939 10.5037 4.54888 10.5255 4.62011 10.5486C5.10516 10.7063 5.75765 10.8908 6.09684 10.8981C6.40453 10.9048 6.74794 10.7779 7.12708 10.5175C9.7147 8.77087 11.0504 7.88804 11.1342 7.86895C11.1934 7.85555 11.2754 7.83864 11.3309 7.88804C11.3865 7.93744 11.381 8.03092 11.3751 8.056C11.3393 8.20895 9.9181 9.53021 9.1826 10.2139C8.95337 10.4271 8.79073 10.5782 8.75748 10.6128C8.683 10.6902 8.60709 10.7633 8.53413 10.8336C8.08355 11.268 7.74554 11.5938 8.55285 12.1258C8.94083 12.3814 9.25119 12.5928 9.56089 12.8037C9.8991 13.0341 10.2364 13.2638 10.673 13.5499C10.7841 13.6228 10.8903 13.6985 10.9938 13.7722C11.3874 14.0529 11.741 14.305 12.1779 14.2647C12.4317 14.2414 12.6939 14.0027 12.8271 13.2908C13.1418 11.6083 13.7605 7.9629 13.9034 6.46077C13.916 6.32917 13.9002 6.16073 13.8876 6.08679C13.8748 6.01285 13.8484 5.9075 13.7523 5.82951C13.6385 5.73715 13.4628 5.71768 13.3842 5.719C13.0269 5.72537 12.4786 5.91598 9.84039 7.01332Z"
+                                        fill="#1E9FE0" />
+                                </svg></a>
+                            <a href="tel:88005553535">8 (800) 555-35-35</a>
+                        </div>
+                        <div>
+                            <form>
+                                <button name="request a call" type="submit">заказать звонок</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- houses -->
+    <div class="houses center">
+        <ul class="breadcrumb">
+            <li><a href="maket_final.html">Главная</a></li>
+            <li><a href="#">Дома</a></li>
+            <li><a href="ready_type.html">Готовые дома на продажу</a></li>
+            <li>Коттедж «Уют»</li>
+          </ul>
+            <p class="h2" style="margin-top: 25px;">Готовые дома на продажу</p>
+
+            <!-- house card -->
+            <div class="card flex_between">
+                <div class="photos">
+                    <div style="grid-column: 1; grid-row: 1/4;"><img src="img3/r1.png" alt="house"></div>
+                    <div style="grid-column: 1; grid-row: 2;"><img src="img3/r2.png" alt="house"></div>
+                    <div style="grid-column: 2; grid-row: 2;"><img src="img3/r2.png" alt="house"></div>
+                    <div style="grid-column: 3; grid-row: 2;"><img src="img3/r2.png" alt="house"></div>
+                    <div style="grid-column: 4; grid-row: 2;"><img src="img3/r2.png" alt="house"></div>
+                    <div style="grid-column: 1; grid-row: 3;"><img src="img3/r2.png" alt="house"></div>
+                    <div style="grid-column: 2; grid-row: 3;"><img src="img3/r2.png" alt="house"></div>
+                </div>
+                <div class="description">
+                    <div class="h3">Коттедж «Уют»</div>
+                    <div class="t2">
+                        <p>Общая площадь</p>
+                        <p class="t1">200м²</p>
+                    </div>
+                    <div class="t2">
+                        <p>Жилая полощадь</p>
+                        <p class="t1">200м²</p>
+                    </div>
+                    <div class="t1">
+                        <p>Этажность</p>
+                        <p class="t1">1 этаж</p>
+                    </div>
+                    <div class="t1">
+                        <p>Планировка</p>
+                        <p class="t1">2 санузла, кухня-гостиная, 3 спальни, котельная, гараж, сауна</p>
+                    </div>
+                    <div class="t1">
+                        <p>Материал стен</p>
+                        <p class="t1">Газобетон</p>
+                    </div>
+                    <div class="t1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                            <path
+                                d="M4.64321 3.71438H19.5003V11.1429H21.3574V1.85706H2.78589V24.1429H13.0003V22.2856H4.64321V3.71438Z"
+                                fill="#2E2E2E" />
+                            <path
+                                d="M18.1071 12.2261L13 14.7799V17.0203C13 19.8207 14.5821 22.3805 17.0866 23.6328L18.1071 24.1429L19.1275 23.6328C21.6321 22.3805 23.2141 19.8207 23.2141 17.0203V14.7799L18.1071 12.2261ZM21.3571 17.0201C21.3571 19.1305 20.1845 21.0277 18.297 21.9715L18.1071 22.0665L17.9171 21.9715C16.0296 21.0277 14.8571 19.1303 14.8571 17.0201V15.9275L18.1071 14.3025L21.3571 15.9275V17.0201Z"
+                                fill="#2E2E2E" />
+                            <path
+                                d="M16.7037 17.3471L15.7813 18.3909L18.149 20.4839L21.0417 17.1554L19.9908 16.2414L18.0195 18.5098L16.7037 17.3471ZM6.5 6.5H17.6429V8.35707H6.5V6.5ZM6.5 11.1429H13.9285V13H6.5V11.1429ZM6.5 15.7856H10.2144V17.6427H6.5V15.7856Z"
+                                fill="#2E2E2E" />
+                        </svg>
+                        Гарантия 5 лет
+                    </div>
+                    <div class="t1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                            <path
+                                d="M18.5669 13.8986V15.7503H12.0621V17.1364C12.0621 17.6414 12.1872 18.1142 12.3931 18.5415H11.4159L6.47154 15.2915C5.73928 14.8096 4.8049 14.7692 4.03227 15.1854C3.65375 15.3892 3.33752 15.6918 3.11716 16.0609C2.89681 16.4301 2.78056 16.852 2.78076 17.2819C2.78076 18.0957 3.1893 18.8444 3.87357 19.2847L9.9366 23.189H18.5669V24.1176H23.2096V13.8986H18.5669ZM10.4825 21.3317L4.87879 17.7232C4.80484 17.6758 4.74402 17.6105 4.70195 17.5334C4.65988 17.4562 4.63792 17.3698 4.63809 17.2819C4.63809 16.9996 4.8308 16.8647 4.91383 16.8198C4.99736 16.7759 5.21547 16.6883 5.4516 16.8429L10.8603 20.3986H16.7179V18.5415H16.6999V18.5405H15.3237C14.7149 18.5405 14.1949 18.1505 14.0006 17.6074H18.5671V21.3317H10.4825ZM21.3525 22.2602H20.4239V15.7557H21.3525V22.2602ZM5.89492 12.7375C5.37543 11.831 5.10096 10.7956 5.10096 9.74266C5.10096 6.41471 7.80785 3.70706 11.1348 3.70706C14.4625 3.70706 17.1691 6.41471 17.1691 9.74266C17.1691 10.7946 16.8949 11.83 16.3757 12.7365L17.987 13.6597C18.6672 12.4722 19.0262 11.1178 19.0262 9.74266C19.0262 5.39045 15.486 1.84973 11.1348 1.84973C6.78359 1.84973 3.24389 5.39045 3.24389 9.74266C3.24389 11.1188 3.60342 12.4734 4.28363 13.6604L5.89492 12.7375Z"
+                                fill="#2E2E2E" />
+                            <path
+                                d="M8.53689 8.90981L7.29834 10.2931L10.77 13.4027L15.0955 8.42688L13.6935 7.20813L10.605 10.7621L8.53689 8.90981Z"
+                                fill="#2E2E2E" />
+                        </svg>
+                        Срок строительства от 4 мес.
+                    </div>
+                    <div>
+                        <div
+                            style="width: 228px; height: 72px; padding: 15px; border: solid 1px #000000; display: flex; align-items: start; justify-content: center; flex-direction: column;">
+                            <p class="h3" style="margin: 0;">10 400 000₽ </p>
+                            <p class="t2">От 45 000₽/мес. в ипотеку </p>
+                        </div>
+                    </div>
+                    <div class="h2">
+                        <p style="margin-bottom: 25px;">Понравился этот дом?</p>
+                        <p class="t2">Оставьте заявку и наш специалист ответит на все интересующие вопросы о проекте</p>
+                    </div>
+                    <div>
+                        <form method="get">
+                            <button name="more" type="submit">узнать подробности</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- description -->
+        <div class="choose center">
+            <div style="width: 550px;">
+                <ul class="flex_between h4">
+                    <li><a class="source source-1">О проекте</a></li>
+                    <li><a class="source source-2">Комплектации</a></li>
+                    <li><a class="source source-3">Дополнительно</a></li>
+                </ul>
+            </div>
+            <div class="target target-1">
+                <div style="width: 681px; margin-top: 40px;">
+                    <p class="t2">
+                        Мы предлагаем вам идеальное комбо для загородной жизни: просторный одноэтажный дом в десяти
+                        минутах езды от города Ижевска! Коттедж «Уют» на участке 5 соток в поселке "Тихие Зори" в южной
+                        части города.
+                    </p>
+                    <p class="t1">Особенности проекта</p>
+                    <ul class="t3" style="list-style-type: disc; margin-left: 18px;">
+                        <li>Площадь дома 75 м2</li>
+                        <li>2 спальные комнаты</li>
+                        <li>1 очень просторная гардеробная</li>
+                        <li>Большая кухня-гостиная</li>
+                        <li>Отдельная котельная</li>
+                        <li>1 санузел</li>
+                    </ul>
+                    <p class="t1">Конструктив дома</p>
+                    <ul class="t3" style="list-style-type: disc; margin-left: 18px;">
+                        <li>Дом из газоблока</li>
+                        <li>Облицовка фасадов дома — <br>влагоустойчивая штукатурка</li>
+                        <li>Предчистовая отделка</li>
+                        <li>Увеличенные оконные проёмы</li>
+                        <li>Мультифункциональные стекла</li>
+                        <li>Отопление</li>
+                        <li>Все коммуникации</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="target target-2 flex_between">
+                <div style="width: 574px; ">
+                    <p class="t2">
+                        Тихие зори-2 - это счастливая жизнь за городом с городским комфортом!
+                        Здесь понравится каждому. С одной стороны – красивые места, леса, поля и живописный пруд. С
+                        другой – готовые коммуникации, асфальтированные дороги, магазин и экорынок, муниципальный
+                        детский сад и площадки для отдыха.
+                    </p>
+                    <p class="t1" style="margin-top: 25px;">А еще:</p>
+                    <ul class="t3" style="list-style-type: disc; margin-left: 18px; margin-bottom: 30px;">
+                        <li>Комфортная удаленность от города</li>
+                        <li>Прекрасные возможности наладить семейный быт</li>
+                        <li>Все условия для занятий хобби на природе, свежий воздух и родные просторы вокруг</li>
+                        <li>Приемлемая цена покупки и выгодные коммунальные тарифы</li>
+                        <li>Забота сервисной службы и общество дружных соседей</li>
+                    </ul>
+                    <p class="t2">Не зря по итогам исследований специализированного агенства «Лаборатория СМИТ» (ОГРН
+                        111831014998) в 2016 году, поселок «Тихие Зори» признан лучшим в Южном направлении города
+                        Ижевска.</p>
+                    <p class="t2">Именно с той поры поселок растет и активно развивается!
+                        Более 500 жителей сделали свой выбор в пользу постоянно проживания в Тихих зорях. Они принимают
+                        непосредственное участие в жизни поселка, сообща решают важные вопросы, вместе отдыхают,
+                        проводят праздники и с радостью рекомендуют его новым жителям.
+                    </p>
+                </div>
+            </div>
+            <div class="target target-3" style="width: 681px; margin-top: 40px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eveniet dolore eaque quaerat delectus
+                    repellendus impedit hic. Deserunt eaque, vel assumenda excepturi mollitia molestias id illo iusto
+                    modi aspernatur repellendus!</p>
+            </div>
+
+            <script src="description.js"></script>
+        </div>
+    </div>
+    <!-- other houses -->
+    <div class="other flex_center" style="height: 731px;">
+        <div class="other_in center" style="height: 491px;">
+            <p class="h2">смотрите так же</p>
+            <div class="flex_between" style=" width: 100%; height: 400px;">
+                <div class="other_ready_cards">
+                    <div><img src="img3/more.png" alt="more"></div>
+                    <div>
+                        <p class="t1"><a href="">Загородный дом «СМАРТ 1/87»</a></p>
+                    </div>
+                    <div>
+                        <p class="t2">пос. Ягул</p>
+                    </div>
+                    <div>
+                        <p class="t2">87м², 10 соток</p>
+                    </div>
+                    <div>
+                        <p class="t1">4 800 000₽ </p>
+                    </div>
+                </div>
+                <div class="other_ready_cards">
+                    <div><img src="img3/more.png" alt="more"></div>
+                    <div>
+                        <p class="t1"><a href="">Загородный дом «СМАРТ 1/87»</a></p>
+                    </div>
+                    <div>
+                        <p class="t2">пос. Ягул</p>
+                    </div>
+                    <div>
+                        <p class="t2">87м², 10 соток</p>
+                    </div>
+                    <div>
+                        <p class="t1">4 800 000₽ </p>
+                    </div>
+                </div>
+                <div class="other_ready_cards">
+                    <div><img src="img3/more.png" alt="more"></div>
+                    <div>
+                        <p class="t1"><a href="">Загородный дом «СМАРТ 1/87»</a></p>
+                    </div>
+                    <div>
+                        <p class="t2">пос. Ягул</p>
+                    </div>
+                    <div>
+                        <p class="t2">87м², 10 соток</p>
+                    </div>
+                    <div>
+                        <p class="t1">4 800 000₽ </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
+
+    <!-- feedback -->
+    <div class="feedback flex_center">
+        <div class="feedback_in center flex_center">
+            <div style="height: 240px; width: 1200px;" class="flex_around center">
+                <div style="width: 451px; height: 234px;">
+                    <p style="margin-top: -10px;">Запишитесь на экскурсию в удобное время</p>
+                    <p>По готовым домам или строящимся объектам</p>
+                </div>
+                <div class="flex_column">
+                    <form method="post" action="text">
+                        <input type="text" name="nam" placeholder="Имя" class="fb_inp">
+                    </form>
+                    <form method="post" action="text">
+                        <input type="text" name="num" placeholder="Телефон" class="fb_inp">
+                    </form>
+                    <div class="flex_center" style="align-items: flex-start;">
+                        <input type="checkbox" name="pers data" class="checkbox">
+                        <span style="margin-top: 2px; margin-left: 5px;">Согласен на обработку персональных
+                            данных</span>
+                    </div>
+                    <form method="get">
+                        <button name="to enrol" type="submit">записаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div style="width: 1200px; height: 388px; margin-bottom: 20px; justify-content: space-between;"
+            class="center flex_column">
+            <div class="contacts">
+                <p class="h2">наши контакты</p>
+            </div>
+            <div style="width: 1129px; height: 180px;" class="flex_between">
+                <div style="width: 215px;">
+                    <div class="logo">
+                        <a href="maket_final.html"><img src="img3/logo.png" alt="logotip"></a>
+                    </div>
+                    <p class="t2" style="margin-top: 15px;">Строительная компания ООО «Люмен Групп»</p>
+                    <div style="margin-top: 70px;">
+                        <a href="" class="link">Вконтакте</a>
+                        <a href="" class="link">Телеграм</a>
+                    </div>
+                </div>
+                <div>
+                    <p class="t2">ИНН</p>
+                    <p class="t3">1840120739</p>
+                    <p class="t2">КПП</p>
+                    <p class="t3">184001001</p>
+                </div>
+                <div style="width: 244px; height: 180px;">
+                    <p class="t2">Адрес:</p>
+                    <p class="t3"><a
+                            href="https://www.google.com/maps/place/9+Января+ул.,+203,+79,+Ижевск,+республика+Удмуртия,+Россия,+426060/@56.8767052,53.2506862,17z/data=!3m1!4b1!4m5!3m4!1s0x43e139ac36b4b7e3:0x2b03b898848c84e8!8m2!3d56.8767052!4d53.2532611?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D"
+                            style="text-decoration: none; color: #000000;" target="_blank">426060, Удмуртская
+                            Республика, г. Ижевск, ул. 9 Января, д. 203, кв. 79</a></p>
+                    <p class="t2">Телефон:</p>
+                    <p class="t3"><a href="tel:88005553535" style="text-decoration: none; color: black;">8 (800)
+                            555-35-35</a></p>
+                    <p class="t2">Режим работы:</p>
+                    <p class="t3">Ееждневно с 9:00 до 20:00</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="#catalog" target="_blank">Дома</a></li>
+                        <li><a href="#materials">Ипотека</a></li>
+                        <li><a href="#stoimost">Отзывы</a></li>
+                        <li><a href="#reviews" target="_blank">Инвесторам</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex_between podval">
+                <div>&copy;2024,ООО «Люмен Групп». Все права защищены</div>
+                <div><a href="">Политика обработки персональных данных</a></div>
+                <div><span style="font-weight: 400; font-size: 12px;">Разработка сайта Olga Sudakova</span></div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

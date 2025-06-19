@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -8,13 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>LumenGroup</title>
     <style>
-        .border {
-            border: solid 2px;
-        }
-
         /* header */
         .header {
             height: 840px;
@@ -27,7 +24,7 @@
         .header1 h1 {
             font-size: 46px;
             text-transform: uppercase;
-            letter-spacing: -2%;
+            letter-spacing: -1px;
             margin-top: 0;
         }
 
@@ -43,35 +40,19 @@
             background-clip: text;
         }
 
-        .header1 button,
-        .info_in button,
-        .ready button,
-        .typical button,
-        .individual button {
-            width: 340px;
-            height: 55px;
-            font-size: 16px;
-            text-transform: uppercase;
-            background: linear-gradient(100deg, #D1BD9F 30%, #B8A17F 70%);
-            border: none;
-            color: #FFFFFF;
+        ._1 {
+            width: 414px;
+            height: 602px;
+            margin-left: 115px;
+            margin-top: 180px;
         }
 
-        .header1 button:hover,
-        .info_in button:hover,
-        .ready button:hover,
-        .typical button:hover,
-        .individual button:hover {
-            background: #C3AD8D;
-            cursor: pointer;
+        ._2 {
+            width: 385px;
         }
 
-        .header1 button:active,
-        .info_in button:active,
-        .ready button:active,
-        .typical button:active,
-        .individual button:active {
-            background: #A78E68;
+        ._3 {
+            margin-top: 40px;
         }
 
         .header2 {
@@ -98,148 +79,490 @@
             width: 100%;
         }
 
+        .r_1 {
+            height: 500px;
+            width: 1200px;
+        }
+
         .typical {}
 
         .individual {}
 
-        /* save block */
-        .save {
-            height: 482px;
-            width: 100%;
+        .house1 {
+            display: grid;
+            grid-template-columns: 650px auto;
+            grid-template-rows: repeat(4, 100px);
         }
 
-        .save_in {
-            background: linear-gradient(100deg, #D1BD9F 30%, #B8A17F 70%);
+        .house2 {
+            display: grid;
+            grid-template-columns: auto 650px;
+            grid-template-rows: repeat(4, 100px);
+        }
+
+        .house1 img {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .house1 p {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .house1 div:nth-child(3) {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .house1 div:nth-child(4) {
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+        .house1 div:nth-child(5) {
+            grid-column: 2;
+            grid-row: 4;
+        }
+
+        /* house2 */
+        .house2 img {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .house2 p {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .house2 div:nth-child(3) {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .house2 div:nth-child(4) {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        .house2 div:nth-child(5) {
+            grid-column: 1;
+            grid-row: 4;
+        }
+
+        .save_in_1 {
+            width: 1120px;
+            height: 162px;
+            border: solid 1px #F1F2F6;
+        }
+
+        .save_in_2 {
+            width: 588px;
+            height: 90px;
+        }
+
+        .feedback_in_1 {
+            height: 240px;
             width: 1200px;
-            height: 242px;
-            color: #FFFFFF;
         }
 
-        .save_in p:first-of-type,
-        .feedback_in p:first-of-type {
-            font-size: 26px;
-            font-weight: 600;
-            margin-top: 17px;
-            text-transform: uppercase;
+        .i_1 {
+            width: 541px;
+            height: 484px;
         }
 
-        .save_in p:last-of-type,
-        .feedback_in p:last-of-type {
-            font-size: 26px;
-        }
-
-        .save_in button,
-        .feedback_in button {
-            width: 340px;
-            height: 55px;
-            background-color: transparent;
-            border: solid 1px #FFFFFF;
-            font-size: 16px;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            cursor: pointer;
-        }
-
-        .save_in button:hover,
-        .feedback_in button:hover {
-            background-color: #FFFFFF;
-            color: #C3AD8D;
-        }
-
-        /* info block */
-        .info {
-            height: 780px;
-            width: 100%;
-        }
-
-        .info_in {
-            width: 1210px;
+        .i_2 {
+            width: 600px;
             height: 540px;
         }
 
-        .info_in ul {
-            list-style-type: none;
-            padding: 0;
+        .i_1 p {
+            margin-top: 0;
+            margin-bottom: 32px;
         }
 
-        .info_in li {
-            padding-top: 25px;
-        }
-
-        .info_in button {
-            margin-top: 50px;
-        }
-
-        /* reviews */
-        .reviews {
-            height: 557px;
-            width: 100%;
-        }
-
-        /* feedback block */
-        .feedback {
-            height: 651px;
-            width: 100%;
-        }
-
-        .feedback_in {
-            background: linear-gradient(100deg, #D1BD9F 30%, #B8A17F 70%);
+        .footer_1 {
             width: 1200px;
-            height: 411px;
-            color: #FFFFFF;
+            height: 388px;
+            margin-bottom: 20px;
+            justify-content: space-between;
         }
 
-        .feedback input {
-            margin-bottom: 26px;
-            margin-top: 2px;
-        }
-
-        .fb_inp {
-            border-top: none;
-            border-left: none;
-            border-right: none;
-            border-bottom: solid 1px #FFFFFF;
-            color: #FFFFFF;
-            width: 340px;
-            height: 28px;
-            font-size: 14px;
-            line-height: 100%;
-            background-color: transparent;
-        }
-
-        .checkbox {
-            width: 19px;
-            height: 19px;
-            appearance: none;
+        .footer_2 {
+            width: 1129px;
+            height: 180px;
             position: relative;
-            background-image: url(img3/checkbox.png);
-            background-repeat: no-repeat;
         }
 
-        .checkbox::after {
-            content: "";
-            background-image: url(img3/galochka.png);
-            background-repeat: no-repeat;
-            position: absolute;
-            top: -2px;
-            left: 3px;
-            font-size: 26px;
-            overflow: hidden;
+        .media {
+            margin-top: 70px;
         }
 
-        .checkbox:checked::after {
-            width: 23px;
-            height: 19px;
+        :root {
+            --animate-duration: 4s;
+            --animate-delay: 1s;
+            --animate-repeat: 5;
         }
 
-        .checkbox:disabled {
-            background: #ccc;
-            border-color: #ccc;
-        }
+        @media screen and (max-width: 850px) {
+            .header {
+                width: 100%;
+                height: fit-content;
+                grid-template-columns: 100%;
+                grid-template-rows: 405px 700px;
+            }
 
+            .head.center {
+                width: 100%;
+            }
 
-        .feedback_in input::placeholder {
-            color: currentColor;
+            .head div:nth-child(2) {
+                display: none;
+            }
+
+            .header1 {
+                height: 100%;
+            }
+
+            .header2 {
+                background-repeat: no-repeat;
+                background-size: contain;
+                z-index: -1;
+                width: 100%;
+                /* height: auto; */
+            }
+
+            .head.center div.flex_between {
+                margin-left: 40px;
+            }
+
+            ._1 {
+                width: 340px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            ._1 div:first-of-type {
+                width: 340px;
+            }
+
+            .header1 h3 {
+                font-size: 20px;
+                margin-top: 0;
+                line-height: 120%;
+            }
+
+            ._2 {
+                width: 477px;
+            }
+
+            ._3 {
+                position: absolute;
+                top: 460px;
+            }
+
+            .h3 {
+                font-size: 20px;
+            }
+
+            .h2 {
+                font-size: 20px;
+                line-height: 130%;
+            }
+
+            .t1 {
+                font-size: 18px;
+            }
+
+            .t3 {
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .h4 {
+                font-size: 16px;
+            }
+
+            .header1 h1 {
+                font-size: 24px;
+                letter-spacing: -1px;
+                line-height: 140%;
+                margin-top: 0;
+            }
+
+            .head ul {
+                display: none;
+            }
+
+            .head .dropdown {
+                display: none;
+            }
+
+            .head svg {
+                display: none;
+            }
+
+            .ready,
+            .individual,
+            .typical {
+                width: 100%;
+                height: fit-content;
+            }
+
+            .r_1 {
+                width: 90%;
+                height: fit-content;
+                margin-top: 120px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .house1 {
+                grid-template-columns: 100%;
+                grid-template-rows: auto 65px 65px 100px 100px;
+            }
+
+            .house1 img {
+                grid-row: 1;
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+            }
+
+            .house1 p {
+                grid-column: 1;
+                grid-row: 2;
+                margin-left: 10px;
+            }
+
+            .r_3 {
+                width: 400px;
+                text-align: left;
+                align-self: flex-start;
+            }
+
+            .house1 div:nth-child(3) {
+                grid-column: 1;
+                grid-row: 3;
+                margin-left: 10px;
+            }
+
+            .house1 div:nth-child(4) {
+                grid-column: 1;
+                grid-row: 4;
+                margin-left: 10px;
+            }
+
+            .house1 div:nth-child(5) {
+                grid-column: 1;
+                grid-row: 5;
+                margin-left: 20px;
+            }
+
+            /* house2 */
+            .house2 {
+                grid-template-columns: 100%;
+                grid-template-rows: auto 65px 65px 100px 100px;
+            }
+
+            .house2 img {
+                grid-column: 1;
+                grid-row: 1;
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+            }
+
+            .house2 p {
+                grid-column: 1;
+                grid-row: 2;
+                margin-left: 10px;
+            }
+
+            .r_1 p.h2 {
+                text-align: left;
+                margin-left: 25px;
+                align-self: self-start;
+            }
+
+            .house2 div:nth-child(3) {
+                grid-column: 1;
+                grid-row: 3;
+                margin-left: 10px;
+            }
+
+            .house2 div:nth-child(4) {
+                grid-column: 1;
+                grid-row: 4;
+                margin-left: 10px;
+            }
+
+            .house2 div:nth-child(5) {
+                grid-column: 1;
+                grid-row: 5;
+                margin-left: 20px;
+            }
+
+            .save_in.center.flex_center {
+                width: 100%;
+                height: 350px;
+            }
+
+            .save_in_1 {
+                width: 90%;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .save_in_2 {
+                width: 335px;
+            }
+
+            .footer {}
+
+            .footer div ul {
+                display: none;
+            }
+
+            .footer_1 {
+                width: 100%;
+                height: 487px;
+            }
+
+            .contacts {
+                margin-left: 10px;
+                margin-bottom: 0;
+            }
+
+            .footer_2 {
+                margin-left: 10px;
+                width: 515px;
+                flex-direction: column;
+                height: fit-content;
+            }
+
+            .media {
+                position: absolute;
+                top: 356px;
+            }
+
+            .flex_between.podval {
+                width: 100%;
+                margin-top: 70px;
+                background-color: #F4F8FC;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .flex_between.podval div:nth-child(3) {
+                display: none;
+            }
+
+            .flex_between.podval div {
+                margin-left: 10px;
+            }
+
+            .feedback_in.center.flex_center {
+                width: 100%;
+                height: 552px;
+            }
+
+            .feedback_in_1 {
+                flex-direction: column;
+                width: 347px;
+            }
+
+            .a {
+                width: 350px;
+            }
+
+            .reviews {
+                width: 100%;
+                height: 350px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .reviews_1 {
+                width: 100%;
+                height: fit-content;
+                margin-top: 253px;
+                margin-bottom: -220px;
+            }
+
+            .reviews_1 div:nth-child(2) {
+                display: none;
+            }
+
+            .slider_container {
+                width: 100%;
+            }
+
+            .slider {
+                width: 100%;
+            }
+
+            .slider div.t2 {
+                width: 100%;
+                margin-top: -121px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .next-button {
+                margin-left: -15px;
+            }
+
+            .prev-button {
+                margin-left: -15px;
+            }
+
+            .slider span.t3 {
+                margin-top: -8px;
+            }
+
+            .info.flex_center {
+                width: 100%;
+                height: fit-content;
+            }
+
+            .info_in.center.flex_between.flex_center {
+                flex-direction: column;
+                height: fit-content;
+                align-items: center;
+            }
+
+            .i_1 {
+                width: 100%;
+                align-items: center;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .i_2 img {
+                width: 100%;
+            }
+
+            .i_2 {
+                width: 100%;
+            }
+
+            .i_1 div:nth-child(1) {
+                width: 562px;
+                margin-top: 55px;
+                margin-bottom: -40px;
+            }
+
+            .i_1 div:nth-child(2) {
+                width: 289px;
+                margin-bottom: -33px;
+            }
 
         }
     </style>
@@ -247,14 +570,15 @@
 
 <body>
     <div class="flex">
+        <article id="main"></article>
 
         <!-- header -->
         <div class="head center">
 
             <!-- шапка сайта -->
             <div style="height: 48px;width: 325px; align-items: center;" class="flex_between">
-                <div class="logo">
-                    <img src="img3/logo.png" alt="logotip">
+                <div class="logo animate__animated animate__backInDown">
+                    <a href="#main"><img src="img3/logo.png" alt="logotip"></a>
                 </div>
                 <div class="flex_center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" fill="none">
@@ -262,7 +586,7 @@
                             d="M6 0C2.68286 0 0 2.504 0 5.6C0 9.8 6 16 6 16C6 16 12 9.8 12 5.6C12 2.504 9.31714 0 6 0ZM6 7.6C5.43168 7.6 4.88663 7.38929 4.48477 7.01421C4.08291 6.63914 3.85714 6.13043 3.85714 5.6C3.85714 5.06957 4.08291 4.56086 4.48477 4.18579C4.88663 3.81071 5.43168 3.6 6 3.6C6.56832 3.6 7.11337 3.81071 7.51523 4.18579C7.91709 4.56086 8.14286 5.06957 8.14286 5.6C8.14286 6.13043 7.91709 6.63914 7.51523 7.01421C7.11337 7.38929 6.56832 7.6 6 7.6Z"
                             fill="black" />
                     </svg>
-                    <div class="dropdown"><a href="" style="margin-left: 10px;">Москва</a>
+                    <div class="dropdown"><a href="#" style="margin-left: 10px;">Москва</a>
                         <div class="dropdown-content">
                             <a href="#">Санкт-Петербург</a>
                             <a href="#">Ижевск</a>
@@ -273,33 +597,50 @@
             <div class="flex_between" style="width: 746px; height: 73px;">
                 <div>
                     <ul class="flex_between">
-                        <li><a href="" target="_blank">О компании</a></li>
-                        <li class="space_header"><a href="#catalog">Дома</a></li>
-                        <li class="space_header"><a href="#materials">Ипотека</a></li>
-                        <li class="space_header"><a href="#stoimost">Отзывы</a></li>
-                        <li class="space_header"><a href="#reviews">Инвесторам</a></li>
+                        <li><a href="#" target="_blank">О компании</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8"
+                                fill="none">
+                                <path d="M14 0.5L7.5 6.5L1 0.5" stroke="#2E2E2E" />
+                            </svg>
+                        </li>
+                        <li class="space_header">
+                            <div class="dropdown"><a href="#houses">Дома</a>
+                                <div class="dropdown-content">
+                                    <a href="ready_type.html" target="_blank">Готовые дома на продажу</a>
+                                    <a href="typical_type.html" target="_blank">Типовые проекты домов</a>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8"
+                                    fill="none">
+                                    <path d="M14 0.5L7.5 6.5L1 0.5" stroke="#2E2E2E" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="space_header"><a href="#ipoteka">Ипотека</a></li>
+                        <li class="space_header"><a href="#reviews">Отзывы</a></li>
+                        <li class="space_header"><a href="#">Инвесторам</a></li>
                     </ul>
                 </div>
                 <div class="flex">
                     <div style="width: 188px; height: 73px; align-items: start; margin-bottom: 4px; margin-top: 13px;"
                         class="flex_center">
-                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
-                                fill="none">
+                        <a href="#" title="whatsapp"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                viewBox="0 0 19 19" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M9.49725 0C4.26006 0 0 4.26125 0 9.49992C0 11.5775 0.670004 13.5043 1.80896 15.0682L0.625254 18.5978L4.27676 17.4307C5.77861 18.4249 7.57088 19 9.50275 19C14.7399 19 19 14.7386 19 9.50008C19 4.26142 14.7399 0.000157038 9.50275 0.000157038L9.49725 0ZM6.84509 4.82554C6.66088 4.38436 6.52127 4.36765 6.2422 4.35631C6.14718 4.35079 6.04129 4.34528 5.9239 4.34528C5.56084 4.34528 5.18125 4.45135 4.95229 4.68589C4.67322 4.97071 3.98083 5.63523 3.98083 6.99802C3.98083 8.3608 4.97466 9.67881 5.1086 9.86323C5.24822 10.0473 7.04614 12.8845 9.83775 14.0408C12.0208 14.9455 12.6686 14.8617 13.1654 14.7556C13.8912 14.5992 14.8014 14.0629 15.0304 13.4152C15.2593 12.7672 15.2593 12.2143 15.1922 12.097C15.1252 11.9798 14.9408 11.9129 14.6618 11.7731C14.3827 11.6335 13.0258 10.9633 12.769 10.8739C12.5177 10.779 12.2777 10.8126 12.0879 11.0807C11.8199 11.4549 11.5576 11.8348 11.3453 12.0636C11.1778 12.2424 10.9041 12.2647 10.6753 12.1697C10.3682 12.0414 9.50844 11.7395 8.44748 10.7957C7.62667 10.0642 7.06838 9.15394 6.90655 8.88031C6.74456 8.60117 6.88983 8.43898 7.01809 8.28829C7.15771 8.11507 7.29166 7.99228 7.43127 7.83025C7.57089 7.66837 7.64905 7.58452 7.73839 7.39459C7.83341 7.21033 7.76627 7.0204 7.6993 6.88074C7.63233 6.74109 7.07404 5.37831 6.84509 4.82554Z"
                                     fill="#67C15E" />
                             </svg></a>
-                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
-                                fill="none">
+                        <a href="#" title="telegram"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                viewBox="0 0 19 19" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M19 9.5C19 14.7467 14.7467 19 9.5 19C4.25329 19 0 14.7467 0 9.5C0 4.25329 4.25329 0 9.5 0C14.7467 0 19 4.25329 19 9.5ZM9.84039 7.01332C8.91642 7.39765 7.06968 8.19308 4.30024 9.39968C3.85052 9.57856 3.61494 9.75356 3.5935 9.92455C3.55726 10.2137 3.91931 10.3275 4.41232 10.4826C4.47939 10.5037 4.54888 10.5255 4.62011 10.5486C5.10516 10.7063 5.75765 10.8908 6.09684 10.8981C6.40453 10.9048 6.74794 10.7779 7.12708 10.5175C9.7147 8.77087 11.0504 7.88804 11.1342 7.86895C11.1934 7.85555 11.2754 7.83864 11.3309 7.88804C11.3865 7.93744 11.381 8.03092 11.3751 8.056C11.3393 8.20895 9.9181 9.53021 9.1826 10.2139C8.95337 10.4271 8.79073 10.5782 8.75748 10.6128C8.683 10.6902 8.60709 10.7633 8.53413 10.8336C8.08355 11.268 7.74554 11.5938 8.55285 12.1258C8.94083 12.3814 9.25119 12.5928 9.56089 12.8037C9.8991 13.0341 10.2364 13.2638 10.673 13.5499C10.7841 13.6228 10.8903 13.6985 10.9938 13.7722C11.3874 14.0529 11.741 14.305 12.1779 14.2647C12.4317 14.2414 12.6939 14.0027 12.8271 13.2908C13.1418 11.6083 13.7605 7.9629 13.9034 6.46077C13.916 6.32917 13.9002 6.16073 13.8876 6.08679C13.8748 6.01285 13.8484 5.9075 13.7523 5.82951C13.6385 5.73715 13.4628 5.71768 13.3842 5.719C13.0269 5.72537 12.4786 5.91598 9.84039 7.01332Z"
                                     fill="#1E9FE0" />
                             </svg></a>
-                        <a href="tel:88005553535">8 (800) 555-35-35</a>
+                        <a href="tel:88005553535" title="telephone">8 (800) 555-35-35</a>
                     </div>
                     <div>
                         <form>
-                            <button name="request a call" type="submit">заказать звонок</button>
+                            <button name="request a call" type="submit" class="animate__animated animate__tada">заказать
+                                звонок</button>
                         </form>
                     </div>
                 </div>
@@ -309,12 +650,15 @@
         <!-- шапка (нижняя часть) -->
         <div class="header">
             <div class="header1">
-                <div style="width: 414px; height: 602px; margin-left: 115px; margin-top: 180px;">
-                    <h1>построим ваш <span>идеальный</span> <span>дом</span> в ижевске от 4,8 млн ₽</h1>
-                    <div style="width: 385px;">
+                <div class="_1">
+                    <div>
+                        <h1 class="animate__animated animate__bounce">построим ваш <span>идеальный</span>
+                            <span>дом</span> в ижевске от 4,8 млн ₽</h1>
+                    </div>
+                    <div class="_2">
                         <h3>В ипотеку, «под ключ», со всеми коммуникациями, точно в срок</h3>
                     </div>
-                    <div style="margin-top: 40px;">
+                    <div class="_3">
                         <form method="get">
                             <button name="count" type="submit">рассчитать стоимость</button>
                         </form>
@@ -328,20 +672,21 @@
                                 <path d="M5 10.1915L12.4462 17L27 1" stroke="url(#paint1_linear_36_372)"
                                     stroke-width="1.5" />
                                 <defs>
-                                    <linearGradient id="paint0_linear_36_372" x1="18" y1="4.04346" x2="-1.25033"
-                                        y2="6.12471" gradientUnits="userSpaceOnUse">
+                                    <linearGradient id="paint0_linear_36_372" x1="0" y1="0" x2="1" y2="1"
+                                        gradientUnits="objectBoundingBox">
                                         <stop stop-color="#B8A17F" />
                                         <stop offset="1" stop-color="#D1BD9F" />
                                     </linearGradient>
-                                    <linearGradient id="paint1_linear_36_372" x1="27" y1="1" x2="2.33882" y2="4.65672"
-                                        gradientUnits="userSpaceOnUse">
+                                    <linearGradient id="paint1_linear_36_372" x1="0" y1="0" x2="1" y2="1"
+                                        gradientUnits="objectBoundingBox">
                                         <stop stop-color="#B8A17F" />
                                         <stop offset="1" stop-color="#D1BD9F" />
                                     </linearGradient>
                                 </defs>
                             </svg>
                         </div>
-                        <div style="grid-row: 1; grid-column: 2;">Гибкая планировка под любой участок (независимая
+                        <div style="grid-row: 1; grid-column: 2; padding-bottom: 0px;" class="t3">Гибкая планировка
+                            под любой участок (независимая
                             планировка от участка)</div>
                         <div style="grid-row: 2; grid-column: 1;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22"
@@ -364,7 +709,8 @@
                                 </defs>
                             </svg>
                         </div>
-                        <div style="grid-row: 2; grid-column: 2;">Трейдин вторичного жилья</div>
+                        <div style="grid-row: 2; grid-column: 2; padding-bottom: 0px;" class="t3">Трейдин вторичного
+                            жилья</div>
                         <div style="grid-row: 3; grid-column: 1;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22"
                                 fill="none">
@@ -386,7 +732,8 @@
                                 </defs>
                             </svg>
                         </div>
-                        <div style="grid-row: 3; grid-column: 2;">Ипотечные услуги</div>
+                        <div style="grid-row: 3; grid-column: 2; padding-bottom: 0px;" class="t3">Ипотечные услуги
+                        </div>
                     </div>
                 </div>
 
@@ -399,165 +746,91 @@
         <!-- content -->
 
         <!-- houses1 -->
+         <article id="houses"></article>
         <div class="ready flex_center">
-            <div style="height: 500px; width: 1200px;" class="center">
+            <div class="center r_1">
                 <p class="h2">Готовые дома на продажу</p>
-                <div class="house"
-                    style="display: grid; grid-template-columns: 650px auto; grid-template-rows: 100px 100px 100px 100px;">
-                    <img src="img3/house3.png" alt="" style="grid-column: 1; grid-row: 1;">
-                    <p style="grid-column: 2; grid-row: 1;" class="h3">Коттедж «СМАРТ 2-140»</p>
-                    <div style="grid-column: 2; grid-row: 2;">
+                <div class="house1">
+                    <img src="img3/house3.png" alt="house">
+                    <p class="h3">Коттедж «СМАРТ 2-140»</p>
+                    <div>
                         <p class="t2">Площадь</p>
                         <p class="t1">140м²</p>
                     </div>
-                    <div style="grid-column: 2; grid-row: 3;">
+                    <div>
                         <p class="t2">Стоимость</p>
                         <p class="t1">7 800 000₽</p>
                     </div>
-                    <div style="grid-column: 2; grid-row: 4;">
+                    <div>
                         <form method="get" action="ready_house.html" target="_blank">
                             <button name="more" type="submit">Подробнее</button>
                         </form>
                     </div>
                 </div>
-                <!-- <button class="prev-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
-                        <path d="M11.1572 19L0.826648 10L11.1572 1" stroke="url(#paint0_linear_1562_1241)" />
-                        <defs>
-                            <linearGradient id="paint0_linear_1562_1241" x1="0.826648" y1="19" x2="12.6163" y2="18.2703"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#B8A17F" />
-                                <stop offset="1" stop-color="#D1BD9F" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </button>
-                <button class="next-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="20" viewBox="0 0 13 20" fill="none">
-                        <path d="M0.983398 1L11.314 10L0.983398 19" stroke="url(#paint0_linear_1562_1243)" />
-                        <defs>
-                            <linearGradient id="paint0_linear_1562_1243" x1="11.314" y1="1" x2="-0.475663" y2="1.72967"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#B8A17F" />
-                                <stop offset="1" stop-color="#D1BD9F" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </button> -->
             </div>
         </div>
 
         <div class="typical center flex_center">
-            <div style="height: 500px; width: 1200px;" class="center">
+            <div class="r_1 center">
                 <p class="h2">типовые проекты</p>
-                <div class="house"
-                    style="display: grid; grid-template-columns: auto 650px; grid-template-rows: 100px 100px 100px 100px;">
-                    <img src="img3/house1.png" alt="" style="grid-column: 2; grid-row: 1;">
-                    <p style="grid-column: 1; grid-row: 1;" class="h3">Загородный дом «СМАРТ 1/200»</p>
-                    <div style="grid-column: 1; grid-row: 2;">
+                <div class="house2">
+                    <img src="img3/house1.png" alt="">
+                    <p class="h3">Загородный дом «СМАРТ 1/200»</p>
+                    <div>
                         <p class="t2">Площадь</p>
                         <p class="t1">145м²</p>
                     </div>
-                    <div style="grid-column: 1; grid-row: 3;">
+                    <div>
                         <p class="t2">Стоимость</p>
                         <p class="t1">7 390 000₽</p>
                     </div>
-                    <div style="grid-column: 1; grid-row: 4;">
+                    <div>
                         <form method="get" action="typical_house.html" target="_blank">
                             <button name="more" type="submit">Подробнее</button>
                         </form>
                     </div>
 
                 </div>
-                <!-- <button class="prev-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
-                        <path d="M11.1572 19L0.826648 10L11.1572 1" stroke="url(#paint0_linear_1562_1241)" />
-                        <defs>
-                            <linearGradient id="paint0_linear_1562_1241" x1="0.826648" y1="19" x2="12.6163" y2="18.2703"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#B8A17F" />
-                                <stop offset="1" stop-color="#D1BD9F" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </button>
-                <button class="next-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="20" viewBox="0 0 13 20" fill="none">
-                        <path d="M0.983398 1L11.314 10L0.983398 19" stroke="url(#paint0_linear_1562_1243)" />
-                        <defs>
-                            <linearGradient id="paint0_linear_1562_1243" x1="11.314" y1="1" x2="-0.475663" y2="1.72967"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#B8A17F" />
-                                <stop offset="1" stop-color="#D1BD9F" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </button> -->
             </div>
         </div>
     </div>
 
     <div class="individual center flex_center">
-        <div style="height: 500px; width: 1200px;" class="center">
-            <p class="h2">индивидуальное проектирование</p>
-            <div class="house"
-                style="display: grid; grid-template-columns: 650px auto; grid-template-rows: 100px 100px 100px 100px;">
-                <img src="img3/house2.png" alt="" style="grid-column: 1; grid-row: 1;">
-                <p style="grid-column: 2; grid-row: 1;" class="h3">Загородный дом «СМАРТ 1/200»</p>
-                <div style="grid-column: 2; grid-row: 2;">
+        <div class="r_1 center">
+            <div class="r_3">
+                <p class="h2">индивидуальное проектирование</p>
+            </div>
+            <div class="house1">
+                <img src="img3/house2.png" alt="house">
+                <p class="h3">Загородный дом «СМАРТ 1/200»</p>
+                <div>
                     <p class="t2">Площадь</p>
                     <p class="t1">200м²</p>
                 </div>
-                <div style="grid-column: 2; grid-row: 3;">
+                <div>
                     <p class="t2">Стоимость</p>
                     <p class="t1">10 400 000₽</p>
                 </div>
-                <div style="grid-column: 2; grid-row: 4;">
+                <div>
                     <form method="get">
                         <button name="more" type="submit">Подробнее</button>
                     </form>
                 </div>
             </div>
-            <!-- <button class="prev-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
-                    <path d="M11.1572 19L0.826648 10L11.1572 1" stroke="url(#paint0_linear_1562_1241)" />
-                    <defs>
-                        <linearGradient id="paint0_linear_1562_1241" x1="0.826648" y1="19" x2="12.6163" y2="18.2703"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#B8A17F" />
-                            <stop offset="1" stop-color="#D1BD9F" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </button>
-            <button class="next-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="20" viewBox="0 0 13 20" fill="none">
-                    <path d="M0.983398 1L11.314 10L0.983398 19" stroke="url(#paint0_linear_1562_1243)" />
-                    <defs>
-                        <linearGradient id="paint0_linear_1562_1243" x1="11.314" y1="1" x2="-0.475663" y2="1.72967"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#B8A17F" />
-                            <stop offset="1" stop-color="#D1BD9F" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </button> -->
         </div>
-    </div>
     </div>
 
     <!-- save -->
     <div class="save flex_center">
         <div class="save_in center flex_center">
-            <div style="width: 1120px; height: 162px; border: solid 1px #F1F2F6;"
-                class="flex_center flex_around center">
-                <div style="width: 588px; height: 90px;">
+            <div class="flex_center flex_around center save_in_1">
+                <div class="save_in_2">
                     <p style="margin-top: 0;">Не нашли подходящий дом?</p>
                     <p>Скачайте расширенный каталог проектов!</p>
                 </div>
                 <div>
                     <form method="get">
-                        <button name="save" type="submit">рассчитать стоимость</button>
+                        <button name="save" type="submit">скачать</button>
                     </form>
                 </div>
             </div>
@@ -565,34 +838,39 @@
     </div>
 
     <!-- info -->
+    <article id="ipoteka"></article>
     <div class="info flex_center">
         <div class="info_in center flex_between flex_center">
-            <div style="width: 541px; height: 484px;">
-                <p class="h1" style="margin-top: 0; margin-bottom: 32px;">Строим в ипотеку
-                    и за наличный расчет</p>
-                <ul>
-                    <li class="t2">Проконсультируем по ипотечным продуктам</li>
-                    <li class="t2">Поможем собрать документы</li>
-                    <li class="t2">Поможем одобрить ипотеку</li>
-                    <li class="t2">Снизим расходы по страхованию</li>
-                    <li class="t2">Запишем в банк на подписание ипотечного договора</li>
-                </ul>
+            <div class="i_1">
+                <div>
+                    <p class="h1">Строим в ипотеку
+                        и за наличный расчет</p>
+                </div>
+                <div>
+                    <ul>
+                        <li class="t2">Проконсультируем по ипотечным продуктам</li>
+                        <li class="t2">Поможем собрать документы</li>
+                        <li class="t2">Поможем одобрить ипотеку</li>
+                        <li class="t2">Снизим расходы по страхованию</li>
+                        <li class="t2">Запишем в банк на подписание ипотечного договора</li>
+                    </ul>
+                </div>
                 <form method="get">
                     <button name="to enrol" type="submit">получить консультацию</button>
                 </form>
             </div>
-            <div style="width: 600px; height: 540px;">
+            <div class="i_2">
                 <img src="img3/smile.png" alt="info">
             </div>
         </div>
     </div>
 
     <!-- reviews -->
-    <div class="reviews flex_around flex_center" style="align-items: end; position: relative;">
-        <div style="width: 407px; height: 490px;">
+    <article id="reviews"></article>
+    <div class="reviews">
+        <div class="reviews_1">
             <p class="h2" style="margin-top: 38px;">Отзывы наших клиентов</p>
-            <div style="position: absolute; top: 303px; right: 770px;"><svg xmlns="http://www.w3.org/2000/svg"
-                    width="23" height="23" viewBox="0 0 23 23" fill="none">
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
                     <path
                         d="M9.36181 11.4422V23H0V13.1759C0 10.9414 0.500838 8.66834 1.50251 6.35678C2.58124 4.04523 4.08375 1.9263 6.01005 0L9.24623 2.54271C8.09045 4.23786 7.24288 6.01005 6.70352 7.8593C6.24121 9.63149 6.01005 11.0184 6.01005 12.0201L5.31658 11.4422H9.36181ZM23 11.4422V23H13.7538V13.1759C13.7538 10.9414 14.2546 8.66834 15.2563 6.35678C16.258 4.04523 17.7605 1.9263 19.7638 0L23 2.54271C21.7672 4.23786 20.8811 6.01005 20.3417 7.8593C19.8794 9.63149 19.6482 11.0184 19.6482 12.0201L19.0704 11.4422H23Z"
                         fill="#2E2E2E" />
@@ -602,10 +880,13 @@
         <div class="slider-container">
             <div style="width: 613px; height: 400px;" class="slider">
                 <div style="width: 540px;height: 152px;" class="t2">
-                    Я остался очень доволен сотрудничеством со строительной компанией «Lumen Групп». Профессионализм и
-                    отличный подход сотрудников позволили нам воплотить все наши идеи в реальность. Качество выполняемых
-                    работ на высоком уровне, сроки соблюдались, а коммуникация с заказчиком была на высшем уровне.
-                    Благодаря этой компании  мы получили дом мечты без лишних хлопот. Рекомендую всем, кто ценит
+                    Я остался очень доволен сотрудничеством со строительной компанией «Lumen Групп».
+                    Профессионализм и
+                    отличный подход сотрудников позволили нам воплотить все наши идеи в реальность. Качество
+                    выполняемых
+                    работ на высоком уровне, сроки соблюдались, а коммуникация с заказчиком была на высшем
+                    уровне.
+                    Благодаря этой компании мы получили дом мечты без лишних хлопот. Рекомендую всем, кто ценит
                     качество и профессионализм!
                     <span class="t3"><br>Максим Королев, 34 года<br>г. Ижевск</span>
                 </div>
@@ -615,6 +896,7 @@
                 <div style="width: 540px;height: 152px;" class="t2">Супер!!!
                     <span class="t3"><br>Максим Королев, 34 года<br>г. Ижевск</span>
                 </div>
+
                 <button class="prev-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
                         <path d="M11.1572 19L0.826648 10L11.1572 1" stroke="url(#paint0_linear_1562_1241)" />
@@ -642,54 +924,16 @@
             </div>
         </div>
     </div>
-    <script>
-        // элементы слайдера
-        document
-        const slider = document.querySelector('.slider');
-        const prevButton = document.querySelector('.prev-button');
-        const nextButton = document.querySelector('.next-button');
-        const slides = Array.from(slider.querySelectorAll('div'));
-        const slideCount = slides.length;
-        let slideIndex = 0;
-
-        // Устанавливаем обработчики событий для кнопок
-        prevButton.addEventListener('click', showPreviousSlide);
-        nextButton.addEventListener('click', showNextSlide);
-
-        // Функция для показа предыдущего слайда
-        function showPreviousSlide() {
-            slideIndex = (slideIndex - 1 + slideCount) % slideCount;
-            updateSlider();
-        }
-
-        // Функция для показа следующего слайда
-        function showNextSlide() {
-            slideIndex = (slideIndex + 1) % slideCount;
-            updateSlider();
-        }
-
-
-        // Функция для обновления отображения слайдера
-        function updateSlider() {
-            slides.forEach((slide, index) => {
-                if (index === slideIndex) {
-                    slide.style.display = 'block';
-                } else {
-                    slide.style.display = 'none';
-                }
-            });
-        }
-
-        // Инициализация слайдера
-        updateSlider();
-    </script>
+    <script src="slider.js"></script>
 
     <!-- feedback -->
     <div class="feedback flex_center">
         <div class="feedback_in center flex_center">
-            <div style="height: 240px; width: 1200px;" class="flex_around center">
+            <div class="flex_around center feedback_in_1">
                 <div style="width: 451px; height: 234px;">
-                    <p style="margin-top: -10px;">Запишитесь на экскурсию в удобное время</p>
+                    <div class="a">
+                        <p style="margin-top: -10px;">Запишитесь на экскурсию в удобное время</p>
+                    </div>
                     <p>По готовым домам или строящимся объектам</p>
                 </div>
                 <div class="flex_column">
@@ -714,20 +958,19 @@
 
     <!-- footer -->
     <div class="footer">
-        <div style="width: 1200px; height: 388px; margin-bottom: 20px; justify-content: space-between;"
-            class="center flex_column">
+        <div class="center flex_column footer_1">
             <div class="contacts">
                 <p class="h2">наши контакты</p>
             </div>
-            <div style="width: 1129px; height: 180px;" class="flex_between">
+            <div class="flex_between footer_2">
                 <div style="width: 215px;">
                     <div class="logo">
-                        <img src="img3/logo.png" alt="logotip">
+                        <a href="#main"><img src="img3/logo.png" alt="logotip"></a>
                     </div>
                     <p class="t2" style="margin-top: 15px;">Строительная компания ООО «Люмен Групп»</p>
-                    <div style="margin-top: 70px;">
-                        <a href="" class="link">Вконтакте</a>
-                        <a href="" class="link">Телеграм</a>
+                    <div class="media">
+                        <a href="" class="link" title="media">Вконтакте</a>
+                        <a href="" class="link" title="media">Телеграм</a>
                     </div>
                 </div>
                 <div>
@@ -740,28 +983,31 @@
                     <p class="t2">Адрес:</p>
                     <p class="t3"><a
                             href="https://www.google.com/maps/place/9+Января+ул.,+203,+79,+Ижевск,+республика+Удмуртия,+Россия,+426060/@56.8767052,53.2506862,17z/data=!3m1!4b1!4m5!3m4!1s0x43e139ac36b4b7e3:0x2b03b898848c84e8!8m2!3d56.8767052!4d53.2532611?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D"
-                            style="text-decoration: none; color: #000000;" target="_blank">426060, Удмуртская
+                            style="text-decoration: none; color: #000000;" target="_blank" title="adress">426060,
+                            Удмуртская
                             Республика, г. Ижевск, ул. 9 Января, д. 203, кв. 79</a></p>
                     <p class="t2">Телефон:</p>
-                    <p class="t3"><a href="tel:88005553535" style="text-decoration: none; color: black;">8 (800)
+                    <p class="t3"><a href="tel:88005553535" style="text-decoration: none; color: black;"
+                            title="telephone">8 (800)
                             555-35-35</a></p>
                     <p class="t2">Режим работы:</p>
                     <p class="t3">Ееждневно с 9:00 до 20:00</p>
                 </div>
                 <div>
                     <ul>
-                        <li><a href="">О компании</a></li>
-                        <li><a href="#catalog" target="_blank">Дома</a></li>
-                        <li><a href="#materials">Ипотека</a></li>
-                        <li><a href="#stoimost">Отзывы</a></li>
-                        <li><a href="#reviews" target="_blank">Инвесторам</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#houses">Дома</a></li>
+                        <li><a href="#ipoteka">Ипотека</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#">Инвесторам</a></li>
                     </ul>
                 </div>
             </div>
             <div class="flex_between podval">
                 <div>&copy;2024,ООО «Люмен Групп». Все права защищены</div>
-                <div><a href="">Политика обработки персональных данных</a></div>
-                <div><span style="font-weight: 400; font-size: 12px;">Разработка сайта Olga Sudakova</span></div>
+                <div><a href="#">Политика обработки персональных данных</a></div>
+                <div><span style="font-weight: 400; font-size: 12px;">Разработка сайта Olga Sudakova</span>
+                </div>
             </div>
         </div>
     </div>

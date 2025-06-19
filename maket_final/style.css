@@ -27,10 +27,12 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .logo img {
     width: 180px;
     height: 38px;
 }
+
 body {
     margin: -1px;
 }
@@ -40,31 +42,40 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     line-height: 120%;
-    letter-spacing: 0%;
+    letter-spacing: 0px;
 }
 
 .h1 {
     font-size: 46px;
-    line-height: 120%;
-    letter-spacing: -2%;
+    letter-spacing: -1px;
+    text-transform: uppercase;
 }
 
 .h2 {
     font-size: 26px;
     line-height: 120%;
     text-transform: uppercase;
-    letter-spacing: 0%;
+    letter-spacing: 0px;
     font-weight: 600;
     margin-top: 0;
 }
-.h3{
+
+.h3 {
     font-size: 26px;
 }
-.t1{
+
+.h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #949494;
+}
+
+.t1 {
     font-size: 18px;
     font-weight: 600;
     margin-top: -7px;
 }
+
 .t2 {
     font-size: 16px;
 }
@@ -74,6 +85,7 @@ body {
     line-height: 100%;
     padding-bottom: 12px;
 }
+
 /* header */
 .head {
     width: 1200px;
@@ -86,20 +98,71 @@ body {
     right: 50%;
     transform: translate(-50%, -50%);
 }
+
+.header1 button,
+.info_in button,
+.ready button,
+.typical button,
+.individual button,
+.choose button,
+.description button,
+.catalog_typical button {
+    width: 340px;
+    height: 55px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: linear-gradient(100deg, #D1BD9F 30%, #B8A17F 70%);
+    border: none;
+    color: #FFFFFF;
+}
+
+.header1 button:hover,
+.info_in button:hover,
+.ready button:hover,
+.typical button:hover,
+.individual button:hover,
+.choose button:hover,
+.description button:hover,
+.catalog_typical button:hover {
+    background: #C3AD8D;
+    cursor: pointer;
+}
+
+.header1 button:active,
+.info_in button:active,
+.ready button:active,
+.typical button:active,
+.individual button:active,
+.choose button:active,
+.description button:active .catalog_typical button:active {
+    background: #A78E68;
+}
+
+.head_bg {
+    width: 1200px;
+    height: 142px;
+    background-color: white;
+    position: relative;
+}
+
 .head a {
     font-size: 16px;
     text-decoration: none;
     color: #2E2E2E;
 }
 
-.head ul {
+.head ul,
+.choose ul {
     padding: 0;
     list-style-type: none;
-    text-align: center;
+}
+
+.choose li {
+    margin-top: 15px;
 }
 
 .head li {
-    margin-right: 28px;
+    margin-right: 20px;
 
 }
 
@@ -133,6 +196,7 @@ body {
 .head svg {
     margin-right: 5px;
 }
+
 /* content */
 .typical,
 .info,
@@ -240,19 +304,135 @@ body {
 .prev-button:active path {
     stroke: #FFFFFF;
 }
-/* card houses */
-/* .house img{
-    float: left;
-}
-.house p{
-    float: left;
-} */
- /* .house{
-    display: grid;
-    grid-template-columns: 600px auto;
-    grid-template-rows: 55px 55px 55px 55px;
- } */
 
+/* feedback block */
+.feedback {
+    height: 651px;
+    width: 100%;
+}
+
+.feedback_in {
+    background: linear-gradient(100deg, #D1BD9F 30%, #B8A17F 70%);
+    width: 1200px;
+    height: 411px;
+    color: #FFFFFF;
+}
+
+.feedback input {
+    margin-bottom: 26px;
+    margin-top: 2px;
+}
+
+.fb_inp {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px #FFFFFF;
+    color: #FFFFFF;
+    width: 340px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 100%;
+    background-color: transparent;
+}
+
+.checkbox {
+    width: 19px;
+    height: 19px;
+    appearance: none;
+    position: relative;
+    background-image: url(img3/checkbox.png);
+    background-repeat: no-repeat;
+}
+
+.checkbox::after {
+    content: "";
+    background-image: url(img3/galochka.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -2px;
+    left: 3px;
+    font-size: 26px;
+    overflow: hidden;
+}
+
+.checkbox:checked::after {
+    width: 23px;
+    height: 19px;
+}
+
+.checkbox:disabled {
+    background: #ccc;
+    border-color: #ccc;
+}
+
+
+.feedback_in input::placeholder {
+    color: currentColor;
+
+}
+
+.save_in p:first-of-type,
+.feedback_in p:first-of-type {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 17px;
+    text-transform: uppercase;
+}
+
+.save_in p:last-of-type,
+.feedback_in p:last-of-type {
+    font-size: 26px;
+}
+
+.save_in button,
+.feedback_in button {
+    width: 340px;
+    height: 55px;
+    background-color: transparent;
+    border: solid 1px #FFFFFF;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.save_in button:hover,
+.feedback_in button:hover {
+    background-color: #FFFFFF;
+    color: #C3AD8D;
+}
+
+.save_in p:first-of-type,
+.feedback_in p:first-of-type {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 17px;
+    text-transform: uppercase;
+}
+
+.save_in p:last-of-type,
+.feedback_in p:last-of-type {
+    font-size: 26px;
+}
+
+.save_in button,
+.feedback_in button {
+    width: 340px;
+    height: 55px;
+    background-color: transparent;
+    border: solid 1px #FFFFFF;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.save_in button:hover,
+.feedback_in button:hover {
+    background-color: #FFFFFF;
+    color: #C3AD8D;
+}
 
 /* footer */
 .footer {
@@ -306,4 +486,317 @@ body {
 .footer ul a {
     text-decoration: none;
     color: #000000;
+}
+
+/* feedback block */
+.feedback {
+    height: 651px;
+    width: 100%;
+}
+
+.feedback_in {
+    background: linear-gradient(100deg, #D1BD9F 30%, #B8A17F 70%);
+    width: 1200px;
+    height: 411px;
+    color: #FFFFFF;
+}
+
+.feedback input {
+    margin-bottom: 26px;
+    margin-top: 2px;
+}
+
+.fb_inp {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px #FFFFFF;
+    color: #FFFFFF;
+    width: 340px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 100%;
+    background-color: transparent;
+}
+
+.checkbox {
+    width: 25px;
+    height: 19px;
+    appearance: none;
+    position: relative;
+    background-image: url(img3/checkbox.png);
+    background-repeat: no-repeat;
+}
+
+.checkbox::after {
+    content: "";
+    background-image: url(img3/galochka.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -2px;
+    left: 3px;
+    font-size: 26px;
+    overflow: hidden;
+}
+
+.checkbox:checked::after {
+    width: 23px;
+    height: 19px;
+}
+
+.checkbox:disabled {
+    background: #ccc;
+    border-color: #ccc;
+}
+
+
+.feedback_in input::placeholder {
+    color: currentColor;
+
+}
+
+/* other houses */
+.other {
+    width: 100%;
+    height: 728px;
+    background-color: #F4F8FC;
+    margin-top: 130px;
+}
+
+.other_in {
+    width: 1200px;
+    height: 488px;
+}
+
+.other_cards {
+    width: 380px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 279px 37px 39px 8px 4px;
+    position: relative;
+}
+
+.sell {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    background-color: #2E2E2E;
+    color: white;
+    top: 25px;
+    right: 0px;
+    justify-content: center;
+}
+
+.other_ready_cards {
+    width: 380px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 284px 29px 20px 68px;
+}
+
+/* cards of houses */
+.houses {
+    width: 1200px;
+    height: fit-content;
+}
+
+.photos {
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 135px);
+    grid-template-rows: 440px 100px 100px;
+    gap: 20px;
+}
+
+.description {
+    width: 550px;
+    display: grid;
+    grid-template-columns: 470px;
+    grid-template-rows: 40px 55px 55px 55px 75px 65px 32px 55px 135px 130px;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.description p {
+    margin: 0;
+}
+
+.other a,
+.catalog_cards a {
+    text-decoration: none;
+    color: #2E2E2E;
+}
+
+.certain_house {
+    width: 570px;
+}
+
+.card {
+    height: 900px;
+}
+
+.choose {
+    height: fit-content;
+    margin-top: 50px;
+    width: 1200px;
+}
+
+.choose a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none
+}
+
+.complectation {
+    width: 380px;
+    height: 525px;
+    background-color: #F4F8FC;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 260px 50px 70px 50px auto;
+    align-items: center;
+}
+
+/* info block */
+.info {
+    height: 780px;
+    width: 100%;
+}
+
+.info_in {
+    width: 1210px;
+    height: 540px;
+}
+
+.info_in ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info_in li {
+    padding-top: 25px;
+}
+
+.info_in button {
+    margin-top: 50px;
+}
+
+/* reviews */
+.reviews{
+    height: 710px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.reviews_1 {
+    width: 407px;
+    height: 490px;
+}
+
+.reviews_1 div:nth-child(2) {
+    position: absolute;
+    top: 303px;
+    right: 770px;
+}
+
+/* save block */
+.save {
+    height: 482px;
+    width: 100%;
+}
+
+.save_in {
+    background: linear-gradient(100deg, #D1BD9F 30%, #B8A17F 70%);
+    width: 1200px;
+    height: 242px;
+    color: #FFFFFF;
+}
+
+/* catalog */
+.catalog_typical {
+    height: 1800px;
+    background-color: #F4F8FC;
+}
+
+.catalog_typical_in {
+    width: 1200px;
+    height: 1600px;
+}
+
+.catalog_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    grid-auto-flow: column;
+    grid-auto-flow: row;
+    gap: 30px;
+}
+
+.project {
+    width: 100%;
+    height: 1200px;
+    align-items: start;
+}
+
+.project_in {
+    width: 1200px;
+    height: fit-content;
+}
+
+.project_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 590px);
+    grid-template-rows: 143px 108px;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.turnkey {
+    height: 677px;
+    margin-top: 25px;
+}
+
+.turnkey p.h4 {
+    margin-bottom: -12px;
+    color: #000000;
+}
+
+.turnkey p.t2 {
+    margin-bottom: 35px;
+}
+
+/* Стиль списка */
+ul.breadcrumb {
+    padding: 10px 0px;
+    list-style: none;
+}
+
+/* Отображение элементов списка бок о бок */
+ul.breadcrumb li {
+    display: inline;
+}
+
+/* Добавить символ косой черты (/) перед/за каждым элементом списка */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #949494;
+    content: "/\00a0";
+}
+
+/* Добавить цвет для всех ссылок внутри списка */
+ul.breadcrumb li a {
+    color: #949494;
+    text-decoration: none;
+}
+
+/* Добавить цвет на наведении курсора мыши */
+ul.breadcrumb li a:hover {
+    color: #2E2E2E;
+    text-decoration: underline;
 }
